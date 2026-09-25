@@ -29,7 +29,7 @@ Abby luxe/
 ```
 Project Overview
 
-svg
+
 
 This project involves the planning and development of a professional website for Abby Luxe Hair, a small South African business that sells wigs and hair care products. The website is being developed as part of the Web Development module at Rosebank College.
 
@@ -43,11 +43,11 @@ The website will focus on beauty, confidence and style and will provide customer
 
 Website Goals and Objectives
 
-svg
+
 
 Primary Goals
 
-svg
+
 
 The website has been planned to achieve several important business objectives:
 
@@ -69,7 +69,7 @@ Improve Customer Experience: Make it easy for customers to find the information 
 
 Key Performance Indicators
 
-svg
+
 
 The success of the website will be measured using several key performance indicators:
 
@@ -105,7 +105,7 @@ These measurements will help determine whether the website is helping Abby Luxe 
 
 Target Audience
 
-svg
+
 
 The Abby Luxe Hair website is aimed primarily at customers who are interested in hair, beauty, wigs and hair care products.
 
@@ -127,7 +127,7 @@ Customers looking for quality and affordable hair products.
 
 Current Online Presence
 
-svg
+
 
 Abby Luxe Hair does not currently have a fully developed website that acts as the main online platform for the business.
 
@@ -153,7 +153,7 @@ Learn about the business's mission and vision.
 
 Strengths
 
-svg
+
 
 Some of the strengths identified during the planning stage include:
 
@@ -171,7 +171,7 @@ Hair and beauty products have a wide potential customer base.
 
 Weaknesses
 
-svg
+
 
 Some possible weaknesses identified include:
 
@@ -187,7 +187,7 @@ There is currently no central online platform for displaying the business's prod
 
 Proposed Improvements
 
-svg
+
 
 The proposed website will improve these areas by providing:
 
@@ -213,11 +213,10 @@ A mobile-friendly website.
 
 Phase 1: Planning and Foundation
 
-svg
 
 Phase 1 Overview
 
-svg
+
 
 The first phase of the Abby Luxe Hair website project focuses on research, planning and establishing the foundation of the website.
 
@@ -229,7 +228,7 @@ The purpose of Phase 1 is to create a clear plan before moving on to the actual 
 
 Organisation Selection
 
-svg
+
 
 For this website development project, the selected organisation is Abby Luxe Hair.
 
@@ -239,25 +238,24 @@ The organisation was selected because it provides an opportunity to develop a we
 
 Business Mission
 
-svg
 
 The mission of Abby Luxe Hair is to offer customers quality and affordable wigs and hair care products and help them look good and feel confident and comfortable with their looks.
 
 Business Vision
 
-svg
+
 
 The vision of Abby Luxe Hair is to become a recognised brand in the field of hair and beauty with quality products, excellent services and affordable prices.
 
 Proposed Website Structure
 
-svg
+
 
 The proposed website will contain the following main pages:
 
 Home Page (home.html)
 
-svg
+
 
 The homepage will act as the main entry point to the website.
 
@@ -285,7 +283,7 @@ The homepage will provide visitors with a quick introduction to the business and
 
 About Us (about.html)
 
-svg
+
 
 The About Us page will provide additional information about Abby Luxe Hair.
 
@@ -305,7 +303,7 @@ The purpose of this page is to help customers understand the business and its id
 
 Products Page
 
-svg
+
 
 The Products page will display the products offered by Abby Luxe Hair.
 
@@ -335,7 +333,7 @@ Contact or enquiry button.
 
 Contact Page
 
-svg
+
 
 The Contact page will provide customers with different ways to communicate with Abby Luxe Hair.
 
@@ -355,7 +353,7 @@ Contact information.
 
 Social Media
 
-svg
+
 
 Social media links will be included on the website to allow customers to access Abby Luxe Hair's social media pages.
 
@@ -363,11 +361,10 @@ This will help connect the website with the business's existing social media pre
 
 Design and User Experience
 
-svg
 
 Design Concept
 
-svg
+
 
 The Abby Luxe Hair website will use a modern and feminine design because the organisation focuses on hair and beauty products.
 
@@ -387,7 +384,7 @@ These colours were selected to create a luxury-inspired appearance while remaini
 
 Typography
 
-svg
+
 
 The website will use clear and readable fonts.
 
@@ -399,7 +396,7 @@ The headings will be larger than the normal text so that visitors can easily ide
 
 Homepage Layout
 
-svg
+
 
 The planned homepage structure is:
 
@@ -409,7 +406,7 @@ The website will use sufficient spacing between sections to prevent the pages fr
 
 User Experience
 
-svg
+
 
 The website will focus on providing a simple and user-friendly experience.
 
@@ -435,11 +432,11 @@ Clear calls to action.
 
 Low-Fidelity Wireframes
 
-svg
+
 
 Homepage
 
-svg
+
 
 +----------------------------------------------+
 | LOGO     HOME | ABOUT | PRODUCTS | CONTACT   |
@@ -473,11 +470,11 @@ svg
 +----------------------------------------------+
 
 
-svg
+
 
 Products Page
 
-svg
+
 
 +----------------------------------------------+
 | LOGO     HOME | ABOUT | PRODUCTS | CONTACT   |
@@ -503,15 +500,15 @@ svg
 +----------------------------------------------+
 
 
-svg
+
 
 Technical Requirements
 
-svg
+
 
 Domain
 
-svg
+
 
 A possible domain name for the website is:
 
@@ -523,7 +520,7 @@ A .co.za domain would be suitable because Abby Luxe Hair is a South African busi
 
 Hosting
 
-svg
+
 
 The website will require a hosting service to make it available online.
 
@@ -543,19 +540,19 @@ Enough bandwidth for a small business website.
 
 Programming Languages
 
-svg
+
 
 The website will use the following technologies:
 
 HTML
 
-svg
+
 
 HTML will be used to create the structure and content of the website.
 
 CSS
 
-svg
+
 
 CSS will be used to design the website, including:
 
@@ -571,13 +568,13 @@ Responsive design.
 
 JavaScript
 
-svg
+
 
 JavaScript will be used later in the development process to add interactive features to the website.
 
 Development Tools
 
-svg
+
 
 The planned development tools include:
 
@@ -593,7 +590,7 @@ The website will also be tested on different screen sizes during the later devel
 
 Phase 1 Activities
 
-svg
+
 
 The main activities completed/planned during Phase 1 include:
 
@@ -639,7 +636,7 @@ Identified development tools.
 
 Phase 1 Key Achievements
 
-svg
+
 
 The main achievements of Phase 1 are:
 
@@ -667,7 +664,7 @@ Established the foundation for the next stage of development.
 
 Project Timeline
 
-svg
+
 
 The website project follows the timeline provided for the Web Development module.
 
@@ -747,7 +744,7 @@ Proposal Submission Date: 21 August 2026
 
 References
 
-svg
+
 
 Abby Luxe Hair. (2026). Organisation information and business requirements. Information provided for the website development project.
 
@@ -763,7 +760,7 @@ W3C. (n.d.). World Wide Web Consortium. Available online at: https://www.w3.org/
 
 Conclusion
 
-svg
+
 
 Phase 1 established the foundation for the Abby Luxe Hair website development project. During this phase, the organisation, target audience, website requirements, goals and objectives were identified.
 
