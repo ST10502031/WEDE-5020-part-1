@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Contact Abby Luxe Hair."><title>Abby Luxe Hair | Contact</title><link rel="stylesheet" href="css/style.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Abby Luxe Hair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<header class="site-header"><nav class="navbar container" aria-label="Main navigation"><a class="brand" href="home.html"><img src="images/logo.jpg" alt="Abby Luxe Hair logo"><span>Abby Luxe Hair</span></a><div class="nav-links"><a href="home.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a class="active" href="contact.html">Contact</a></div></nav></header>
-<main>
-<section class="page-banner"><div class="container"><p class="eyebrow">Get In Touch</p><h1>Contact Abby Luxe Hair</h1><p>Have a question about a product or service? Send us an enquiry.</p></div></section>
-<section class="section"><div class="container contact-grid"><div><h2>Let's Connect</h2><p>Use the contact details below or complete the enquiry form. Replace the placeholder contact details with the business's final details before publishing.</p><ul class="contact-list"><li><strong>WhatsApp</strong><br>Available for product enquiries</li><li><strong>Email</strong><br>info@abbyluxe.co.za</li><li><strong>Social Media</strong><br>Follow Abby Luxe Hair for updates</li><li><strong>Business Hours</strong><br>Monday – Saturday</li></ul></div><form class="form-card" action="#" method="post"><h2>Send an Enquiry</h2><div class="form-group"><label for="name">Full Name</label><input id="name" name="name" type="text" required></div><div class="form-group"><label for="email">Email Address</label><input id="email" name="email" type="email" required></div><div class="form-group"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div><button class="btn" type="submit">Send Enquiry</button></form></div></section>
-</main>
-<footer class="site-footer"><div class="container"><div class="footer-grid"><div><h3>Abby Luxe Hair</h3><p>Quality hair and beauty products for customers who want to look and feel confident.</p></div><div><h3>Explore</h3><p><a href="home.html">Home</a><br><a href="about.html">About Us</a><br><a href="services.html">Services</a></p></div><div><h3>Gallery</h3><p><a href="gallery.html">View Gallery</a></p></div></div><p class="copyright">&copy; 2026 ST10502031 Abby Luxe Hair.</p></div></footer>
-</body></html>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <img src="images/logo.jpg" alt="Abby Luxe Hair logo">
+                <span>Abby Luxe Hair</span>
+            </div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="enquiry.html">Enquire</a>
+                <a href="contact.html" class="active">Contact us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Get In Touch</h1>
+        <p>Questions, feedback, or just want to say hi? Send us a message and we'll get back to you as soon as we can.</p>
+    </section>
+
+    <main class="section container" style="padding-top: var(--space-lg);">
+        <div class="form-card">
+            <form id="contact-form" action="https://formsubmit.co/ajax/enquiries@abbyluxehair.co.za" method="POST" novalidate>
+
+                <div class="field">
+                    <label for="c-fullName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="c-fullName" name="fullName" required minlength="2" maxlength="80" autocomplete="name">
+                    <p class="error-message" id="c-fullName-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="c-email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="c-email" name="email" required autocomplete="email">
+                    <p class="error-message" id="c-email-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="c-phone">Phone Number</label>
+                    <input type="tel" id="c-phone" name="phone" placeholder="e.g. 0821234567 (optional)" autocomplete="tel">
+                    <p class="error-message" id="c-phone-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="c-messageType">Type of Message <span class="required">*</span></label>
+                    <select id="c-messageType" name="messageType" required>
+                        <option value="">-- Please select --</option>
+                        <option value="General Enquiry">General enquiry</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Partnership / Collaboration">Partnership or collaboration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <p class="error-message" id="c-messageType-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="c-subject">Subject</label>
+                    <input type="text" id="c-subject" name="subject" maxlength="100" placeholder="Brief subject line (optional)">
+                </div>
+
+                <div class="field">
+                    <label for="c-message">Message <span class="required">*</span></label>
+                    <textarea id="c-message" name="message" required minlength="10" maxlength="500" placeholder="Type your message here..."></textarea>
+                    <p class="char-count"><span id="c-message-count">0</span>/500</p>
+                    <p class="error-message" id="c-message-error"></p>
+                </div>
+
+                <!-- FormSubmit configuration -->
+                <input type="hidden" name="_subject" value="New message from Abby Luxe Hair website">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit" class="btn-primary" id="contact-submit-btn">Send Message</button>
+            </form>
+
+            <div class="response-panel" id="contact-response"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Abby Luxe Hair</h4>
+                <p style="color:#aaa; font-size: var(--fs-sm);">Quality and affordable wigs and hair care products, so you can look good and feel confident, always.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a><br>
+                <a href="about.html">About us</a><br>
+                <a href="services.html">Services</a>
+            </div>
+            <div>
+                <h4>Get In Touch</h4>
+                <a href="enquiry.html">Enquire</a><br>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; ST10502031 Abby Luxe Hair</div>
+    </footer>
+
+    <script src="js/form-utils.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

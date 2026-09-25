@@ -1,305 +1,102 @@
-# Abby Luxe Hair - WEDE5020
-
-## Project Overview
-
-Abby Luxe Hair is a website project created for the WEDE5020 Web Development module. The website is designed for a hair business that provides hair products and services to customers.
-
-The purpose of the website is to create an online presence for Abby Luxe Hair and provide customers with information about the business, available services, products, images and contact details.
-
-The website was initially developed as part of Part 1 and was then improved in Part 2 through the use of external CSS, responsive layouts and additional styling.
-
-## Organisation / Business
-
-Abby Luxe Hair is a hair business focused on providing quality hair products and services to its customers. The website provides customers with an easy way to learn more about the business and view the services and products available.
-
-The website is intended to give the business a professional online presence and make important information easily accessible to customers.
-
-## Mission
-
-The mission of Abby Luxe Hair is to provide customers with quality hair products and services while creating a positive and welcoming customer experience.
-
-## Vision
-
-The vision of Abby Luxe Hair is to grow as a trusted hair business and build a strong online presence where customers can easily discover its products and services.
-
-## Target Audience
-
-The website is aimed at customers who are interested in hair products and hair-related services.
-
-The target audience includes:
-
-* Customers looking for hair products.
-* Customers interested in hair services.
-* People looking for information about available products and services.
-* Existing customers who need contact information.
-* Potential new customers who want to view the business before making an enquiry.
-
-## Website Objectives
-
-The main objectives of the website are to:
-
-* Introduce customers to Abby Luxe Hair.
-* Provide information about the business.
-* Display available hair products and services.
-* Provide a gallery where customers can view images.
-* Make contact information easy to find.
-* Provide an enquiry form for customers.
-* Create a professional and attractive online presence.
-* Make the website accessible on different screen sizes.
-
-## Website Pages
-
-The website consists of the following main pages:
-
-### Home
-
-The Home page introduces Abby Luxe Hair and provides an overview of the website. It is designed to give visitors a first impression of the business and direct them to other sections of the website.
-
-### About
-
-The About page provides information about Abby Luxe Hair, including the organisation's background, mission, vision and target audience.
-
-### Services
-
-The Services page provides information about the products and services offered by Abby Luxe Hair.
-
-### Gallery
-
-The Gallery page displays images related to the business and its hair products and services.
-
-### Contact
-
-The Contact page provides customers with contact information and an enquiry form that can be used to get in touch with the business.
-
-## Website Structure
-
-The website uses a simple navigation structure so that users can move between the different pages.
-
-The main navigation consists of:
-
-* Home
-* About
-* Services
-* Gallery
-* Contact
-
-This structure allows users to find information without having to search through multiple pages.
-
-## Design
-
-The website design uses a feminine and elegant visual style suitable for a hair business.
-
-The main colour palette includes:
-
-* Dark pink
-* Black
-* Gold
-* Cream / white
-
-These colours are used to create a consistent appearance throughout the website.
-
-The website also uses typography that separates headings from normal body text to make the content easier to read.
-
-## Part 1 Technologies
-
-The initial website was developed using:
-
-* HTML5
-* Images
-* Hyperlinks
-* Forms
-* Basic HTML page structure
-* Basic styling
-
-The Part 1 website provided the foundation that was later developed further in Part 2.
-
----
-
-# Part 2: CSS Styling and Responsive Design
-
-## Part 2 Overview
-
-For Part 2, the Abby Luxe Hair website was developed further from the Part 1 structure. An external CSS stylesheet was added to provide consistent styling across the website.
-
-The website was also improved to work across desktop, tablet and mobile screen sizes.
-
-## Part 2 Changes
-
-* Added an external `css/style.css` stylesheet.
-* Applied consistent colours, fonts and spacing across the pages.
-* Added Flexbox for navigation and layouts.
-* Added CSS Grid for content and gallery layouts.
-* Added hover and focus effects.
-* Added responsive layouts for different screen sizes.
-* Adjusted navigation for smaller screens.
-* Added responsive images.
-* Improved the layout of the contact form and content sections.
-* Added content to the About, Services, Gallery and Contact pages.
-* Tested the website at different screen sizes.
-
-## Responsive Design
-
-The website was designed to work across:
-
-* Desktop screens
-* Tablet screens
-* Mobile screens
-
-Media queries were used to adjust the layout, font sizes, spacing and navigation at smaller screen sizes.
-
-## Responsive Images
-
-Responsive image techniques were used where appropriate, including:
-
-* `srcset`
-* `sizes`
-* `<picture>`
-
-Images also include descriptive `alt` text.
-
-## Testing
-
-The website was tested using browser developer tools at different screen sizes.
-
-The following were checked:
-
-* Navigation
-* Images
-* Text readability
-* Page layout
-* Mobile responsiveness
-* Buttons and links
-* Content overflow
+# Abby Luxe Hair — Website Project
+
+**Module:** Web Development (Introduction) — WEDE5020
+**Student Number:** ST10502031
+
+A responsive multi-page website for Abby Luxe Hair, a small business selling wigs and hair care products, built as part of the WEDE5020 Portfolio of Evidence.
+
+## Project Structure
+
+```
+Abby luxe/
+├── home.html
+├── about.html
+├── services.html
+├── gallery.html
+├── enquiry.html          # Product/service enquiry form (AJAX + validation)
+├── contact.html          # General contact form (AJAX + validation)
+├── css/
+│   └── style.css         # Single external stylesheet for the whole site
+├── js/
+│   ├── form-utils.js     # Shared validation helpers
+│   ├── enquiry.js        # Enquiry form logic (validation, estimate, AJAX)
+│   └── contact.js        # Contact form logic (validation, AJAX)
+├── images/
+│   ├── responsive/       # Multi-width image variants used in srcset
+│   └── ...                # Cropped product/lifestyle images, logo
+└── documents/
+    └── Proposal.pdf       # Original Part 1 project proposal
+```
+
+## ⚠️ Before Deploying
+
+Both `enquiry.html` and `contact.html` submit to a placeholder email via FormSubmit
+(`https://formsubmit.co/ajax/enquiries@abbyluxehair.co.za`). Before going live:
+
+1. Replace the placeholder address in both files' `<form action="...">` with the real business email.
+2. Submit each form once after deploying and click the confirmation link FormSubmit emails to that
+   address — submissions silently fail until this is done.
 
 ## Changelog
 
-### 24 September 2026 - Part 2
+### v1.2 — Part 2: CSS Styling & Responsive Design
+- Built a single external stylesheet (`css/style.css`) and linked it across all six pages, replacing
+  the inline `style="background-color: pink;"` used in Part 1.
+- Added a CSS reset and a shared set of design tokens (custom properties) for colour palette,
+  typography scale, spacing scale, radius and shadows, so the whole site pulls from one source of truth.
+- Applied a typographic scale using `rem` units (`font-family`, `font-size`, `line-height`,
+  `letter-spacing`) with Playfair Display for headings and Poppins for body text.
+- Rebuilt page layouts using CSS Grid and Flexbox: the navigation bar, the home page hero, the
+  category/product card grids, the four-column feature grid, the gallery mosaic, and the footer.
+- Added decorative and interactive styling: box shadows, rounded corners, and `:hover`, `:focus-visible`
+  and `:active` states on buttons, nav links, product cards and gallery items.
+- Implemented two responsive breakpoints using media queries: tablet (`max-width: 1024px`) and mobile
+  (`max-width: 600px`), adjusting column counts, font sizes, spacing and nav layout at each.
+- Added responsive images using `srcset`, `sizes`, and `<picture>` with real multi-resolution JPEG
+  variants (480w / native width) for the home hero image and the products page texture banner.
+- Populated `about.html`, `services.html`, `gallery.html`, which were empty placeholder pages in
+  Part 1, with real content derived from the Part 1 proposal (mission, vision, target audience,
+  product categories, pricing, and a photo gallery).
+- Rebuilt `home.html`, replacing a broken `<video>` reference to a missing `download.mp4` file with
+  a working responsive hero image.
+- Standardised the header/nav and footer markup across `contact.html` and `enquiry.html` (previously
+  built in Part 3) so all six pages now share identical structure and styling.
+- Fixed a CSS Grid packing gap in the gallery mosaic by adding `grid-auto-flow: dense`.
+- Tested all six pages at desktop (1440px), tablet (820px) and mobile (390px) widths using browser
+  dev tools to confirm layout, navigation, and form behaviour at each breakpoint.
 
-* Added external CSS stylesheet.
-* Added responsive design.
-* Added Flexbox and CSS Grid layouts.
-* Added hover and focus states.
-* Added responsive images.
-* Added mobile and tablet layouts.
-* Added content to the remaining website pages.
-* Updated the README to document Part 2 changes.
+### v1.1 — Part 3: Forms & JavaScript Validation
+- Added `enquiry.html`: a product/service enquiry form (name, email, phone, enquiry type, product
+  category, preferred contact method, message) with HTML5 + JavaScript validation and an on-page
+  cost/availability estimate generated after submission.
+- Added `contact.html`: a general contact form (name, email, phone, message type, subject, message)
+  with validation and a live character counter.
+- Implemented client-side validation with custom inline error messages (`js/form-utils.js`,
+  `js/enquiry.js`, `js/contact.js`), including a South African phone number pattern and email format
+  checking.
+- Implemented AJAX form submission using the Fetch API against FormSubmit, so both forms submit
+  without a page reload and show a success/error panel in place.
 
+### v1.0 — Part 1: Project Proposal
+- Initial site skeleton created: `home.html`, `about.html`, `services.html`, `gallery.html`,
+  `contact.html`, with a shared (inline-styled) nav and logo.
+- Project proposal document completed (`documents/Proposal.pdf`), covering goals and objectives,
+  current market analysis, proposed features, and design aesthetic (colour palette, typography).
 
-# Abby Luxe Hair - WEDE5020 Part 2
+### Corrections from Part 1 Feedback
+> **To complete:** add the specific corrections made in response to your lecturer's Part 1 feedback
+> here, e.g. changes to goals/objectives, the current analysis, proposed features, or the design
+> aesthetic. List each point raised and the corresponding change made.
 
-## Project
-This version implements Part 2 of the WEDE5020 Web Development (Introduction) assessment. The website has been updated from the Part 1 structure to include an external stylesheet, consistent visual styling, desktop layouts and responsive layouts for tablets and mobile devices.
+- [ ] *(add feedback point 1 and how it was addressed)*
+- [ ] *(add feedback point 2 and how it was addressed)*
 
-## Pages
-- `home.html` - Home page and website introduction
-- `about.html` - Organisation information, mission, vision and audience
-- `services.html` - Products and services
-- `gallery.html` - Image gallery
-- `contact.html` - Contact information and enquiry form
-- `css/style.css` - External stylesheet used by all pages
+## References
 
-## Part 2 implementation
-- External CSS stylesheet linked to every HTML page.
-- CSS reset and base styles added for consistent browser rendering.
-- Typography uses Playfair Display for headings and Montserrat for body text.
-- Flexbox is used for the header/navigation and action buttons.
-- CSS Grid is used for hero, cards, gallery, contact and footer layouts.
-- Colour palette follows the Part 1 proposal: dark pink, black, gold and cream/white.
-- Hover and focus states were added to navigation links, buttons and gallery images.
-- Responsive breakpoints were added for tablet and mobile screens.
-- Relative units including `rem`, `%`, `em`-style responsive sizing through `clamp()`, and flexible grid units are used.
-- Responsive images use `srcset`, `sizes` and a `picture` element.
-- Images use descriptive `alt` text.
-- Navigation wraps into a mobile-friendly layout at smaller widths.
-- Forms, cards and content sections resize into single-column layouts on mobile devices.
-
-## Changelog
-
-### 24 September 2026 - Part 2 CSS and responsive design
-- Replaced page-level pink inline styling with one external `css/style.css` file.
-- Linked the external stylesheet to all five HTML pages.
-- Added a CSS reset and reusable CSS variables for the Abby Luxe colour palette.
-- Added consistent typography, spacing, buttons, cards, borders and shadows.
-- Added Flexbox navigation and CSS Grid layouts for the main content sections.
-- Added hover and focus-visible states for interactive elements.
-- Added desktop, tablet (`56rem`) and mobile (`38rem`) responsive breakpoints.
-- Changed multi-column card and gallery layouts to single-column layouts on mobile.
-- Added responsive hero and contact layouts.
-- Added responsive image handling using `srcset`, `sizes` and `picture`.
-- Replaced the missing video reference from Part 1 with a responsive image-based hero section so the page does not display a broken media element.
-# Phase 2: CSS Styling and Responsive Design
-
-## Phase 2 Overview
-
-Phase 2 focuses on improving the visual design of the Abby Luxe Hair website and making the website responsive on different screen sizes.
-
-The website was updated using an external CSS stylesheet. The styling was applied across the different pages to keep the colours, fonts, spacing and layout consistent.
-
-## CSS Styling
-
-An external `style.css` file was created and linked to the website pages.
-
-The CSS was used to:
-
-- Set the website colours and fonts.
-- Add consistent spacing and sizing.
-- Style the navigation menu.
-- Style headings and paragraphs.
-- Style buttons and links.
-- Create product and content layouts.
-- Add hover and focus effects.
-- Improve the overall appearance of the website.
-
-## Desktop Layout
-
-Flexbox and CSS Grid were used to organise the content on larger screens.
-
-The desktop layout uses multiple columns where appropriate, while keeping the navigation and content easy to follow.
-
-## Responsive Design
-
-Media queries were added to make the website work on different screen sizes.
-
-The website was adjusted for:
-
-- Desktop screens.
-- Tablet screens.
-- Mobile screens.
-
-On smaller screens, some of the multi-column sections change to a single-column layout. Font sizes, spacing and navigation were also adjusted.
-
-## Responsive Images
-
-Images were made responsive so that they can adjust to different screen sizes.
-
-The website uses responsive image techniques such as `srcset`, `sizes` and the `picture` element where appropriate.
-
-## Testing
-
-The website was tested using browser developer tools at different screen sizes.
-
-The pages were checked to make sure that:
-
-- Navigation works correctly.
-- Images display correctly.
-- Text remains readable.
-- Content does not overflow the screen.
-- Buttons remain accessible.
-- The layout changes correctly on smaller screens.
-
-# Changelog
-
-## Part 2 – CSS Styling and Responsive Design
-
-- Added an external CSS stylesheet and linked it to the website pages.
-- Updated the colours, fonts, spacing and general appearance of the website.
-- Added a CSS reset and base styles.
-- Used Flexbox and CSS Grid to improve the page layouts.
-- Added hover and focus effects to interactive elements.
-- Added responsive breakpoints for desktop, tablet and mobile screens.
-- Adjusted the layouts for smaller screens.
-- Updated font sizes and spacing for mobile devices.
-- Added responsive image styling.
-- Tested the website at different screen sizes using browser developer tools.
-- Added structured content to the previously empty About, Services, Gallery and Contact pages based on the Part 1 website proposal.
-- Added a README documenting the Part 2 changes.
+- IIE. 2026. *IT Professional Practice / Web Development Module Manual*. The Independent Institute of Education.
+- MDN Web Docs. n.d. *CSS Grid Layout*. Mozilla. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+- MDN Web Docs. n.d. *Responsive images*. Mozilla. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
+- MDN Web Docs. n.d. *Using media queries*. Mozilla. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+- FormSubmit. n.d. *FormSubmit — Free form backend, no JavaScript, no sign up*. Available at: https://formsubmit.co/
+- Google Fonts. n.d. *Playfair Display*. Available at: https://fonts.google.com/specimen/Playfair+Display
+- Google Fonts. n.d. *Poppins*. Available at: https://fonts.google.com/specimen/Poppins

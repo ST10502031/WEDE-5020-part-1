@@ -3,44 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abby Luxe Hair - quality and affordable wigs and hair care products.">
-    <title>Abby Luxe Hair | Home</title>
+    <title>Abby Luxe Hair | Luxury Wigs &amp; Hair Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header">
-    <nav class="navbar container" aria-label="Main navigation">
-        <a class="brand" href="home.html"><img src="images/logo.jpg" alt="Abby Luxe Hair logo"><span>Abby Luxe Hair</span></a>
-        <div class="nav-links">
-            <a class="active" href="home.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <img src="images/logo.jpg" alt="Abby Luxe Hair logo">
+                <span>Abby Luxe Hair</span>
+            </div>
+            <div class="nav-links">
+                <a href="home.html" class="active">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="enquiry.html">Enquire</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="home-hero">
+            <div class="home-hero-copy">
+                <h1>Luxury Hair. Effortless Confidence.</h1>
+                <p>Premium quality wigs and hair care products for women who love timeless beauty — at prices that don't compromise on quality.</p>
+                <a href="services.html" class="btn-primary">Shop Collection</a>
+            </div>
+            <div class="home-hero-image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/responsive/hero-home-480w.jpg">
+                    <img src="images/responsive/hero-home-713w.jpg"
+                         srcset="images/responsive/hero-home-480w.jpg 480w, images/responsive/hero-home-713w.jpg 713w"
+                         sizes="(max-width: 1024px) 90vw, 500px"
+                         alt="Model wearing a luxury Abby Luxe Hair wig">
+                </picture>
+            </div>
+        </section>
+
+        <!-- FEATURED CATEGORIES -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Shop by Texture</h2>
+                    <p>Every texture, cut and colour — find the wig that matches your vibe.</p>
+                </div>
+                <div class="grid-5">
+                    <a class="category-card" href="services.html#wigs">
+                        <img src="images/cat-straight.jpg" alt="Straight wig" loading="lazy">
+                        <div class="category-card-label"><span>Straight</span></div>
+                    </a>
+                    <a class="category-card" href="services.html#wigs">
+                        <img src="images/cat-bodywave.jpg" alt="Body wave wig" loading="lazy">
+                        <div class="category-card-label"><span>Body Wave</span></div>
+                    </a>
+                    <a class="category-card" href="services.html#wigs">
+                        <img src="images/cat-deepwave.jpg" alt="Deep wave wig" loading="lazy">
+                        <div class="category-card-label"><span>Deep Wave</span></div>
+                    </a>
+                    <a class="category-card" href="services.html#wigs">
+                        <img src="images/cat-curly.jpg" alt="Curly wig" loading="lazy">
+                        <div class="category-card-label"><span>Curly</span></div>
+                    </a>
+                    <a class="category-card" href="services.html#wigs">
+                        <img src="images/cat-bobwigs.jpg" alt="Bob wig" loading="lazy">
+                        <div class="category-card-label"><span>Bob Wigs</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="section" style="background-color: var(--white);">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose Abby Luxe Hair</h2>
+                    <p>Quality you can see and feel, from lace to ends.</p>
+                </div>
+                <div class="grid-4">
+                    <div class="feature-card">
+                        <img src="images/feature-hdlace.jpg" alt="HD lace closeup" loading="lazy">
+                        <h4>HD Lace</h4>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/feature-preplucked.jpg" alt="Pre-plucked hairline closeup" loading="lazy">
+                        <h4>Pre-Plucked Hairline</h4>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/feature-premiumtexture.jpg" alt="Premium hair texture closeup" loading="lazy">
+                        <h4>Premium Texture</h4>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/feature-healthyends.jpg" alt="Healthy hair ends closeup" loading="lazy">
+                        <h4>Healthy Ends</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIFESTYLE STRIP -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Style, Your Way</h2>
+                    <p>See how our community wears their Abby Luxe Hair.</p>
+                </div>
+                <div class="grid-4">
+                    <img src="images/lifestyle-1.jpg" alt="Customer styling her wig" style="border-radius: var(--radius); box-shadow: var(--shadow-sm);" loading="lazy">
+                    <img src="images/lifestyle-2.jpg" alt="Customer taking a mirror selfie" style="border-radius: var(--radius); box-shadow: var(--shadow-sm);" loading="lazy">
+                    <img src="images/lifestyle-3.jpg" alt="Customer wearing a wig outdoors" style="border-radius: var(--radius); box-shadow: var(--shadow-sm);" loading="lazy">
+                    <img src="images/lifestyle-4.jpg" alt="Stylist adjusting a client's wig" style="border-radius: var(--radius); box-shadow: var(--shadow-sm);" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-band">
+            <h2>Ready to Find Your Perfect Look?</h2>
+            <p>Tell us what you're after and we'll get back to you with pricing and availability.</p>
+            <a href="enquiry.html" class="btn-outline">Enquire Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Abby Luxe Hair</h4>
+                <p style="color:#aaa; font-size: var(--fs-sm);">Quality and affordable wigs and hair care products, so you can look good and feel confident, always.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="about.html">About us</a><br>
+                <a href="services.html">Services</a><br>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div>
+                <h4>Get In Touch</h4>
+                <a href="enquiry.html">Enquire</a><br>
+                <a href="contact.html">Contact us</a>
+            </div>
         </div>
-    </nav>
-</header>
-<main>
-<section class="hero">
-    <div class="container hero-grid">
-        <div class="hero-copy">
-            <p class="eyebrow">Hair • Beauty • Confidence</p>
-            <h1>Quality hair that helps you feel confident.</h1>
-            <p>Welcome to Abby Luxe Hair. Explore quality wigs and hair care products selected with style, comfort and affordability in mind.</p>
-            <div class="hero-actions"><a class="btn" href="services.html">Explore Services</a><a class="btn btn-outline" href="contact.html">Contact Us</a></div>
-        </div>
-        <div class="hero-image">
-            <picture><source media="(max-width: 38rem)" srcset="images/images-768.png"><img src="images/images.png" srcset="images/images-768.png 768w, images/images.png 1536w" sizes="(max-width: 38rem) 94vw, 48vw" alt="Hair styling showcase"></picture>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-        <div class="section-heading"><p class="eyebrow">Why Abby Luxe</p><h2>Simple, stylish and customer-focused</h2><p>Our website makes it easier to discover products, learn about the business and get in touch.</p></div>
-        <div class="card-grid">
-            <article class="card"><div class="card-icon">✦</div><h3>Quality</h3><p>Hair products presented with a focus on quality, appearance and customer confidence.</p></article>
-            <article class="card"><div class="card-icon">♡</div><h3>Affordable</h3><p>Products are positioned for customers looking for stylish hair options at affordable prices.</p></article>
-            <article class="card"><div class="card-icon">✧</div><h3>Easy Enquiries</h3><p>Use the contact page to ask questions and connect with Abby Luxe Hair.</p></article>
-        </div>
-    </div>
-</section>
-</main>
-<footer class="site-footer"><div class="container"><div class="footer-grid"><div><h3>Abby Luxe Hair</h3><p>Quality hair and beauty products designed to help customers look and feel confident.</p></div><div><h3>Explore</h3><p><a href="about.html">About Us</a><br><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a></p></div><div><h3>Connect</h3><p><a href="contact.html">Contact Us</a></p></div></div><p class="copyright">&copy; 2026 ST10502031 Abby Luxe Hair. All rights reserved.</p></div></footer>
+        <div class="footer-bottom">&copy; ST10502031 Abby Luxe Hair</div>
+    </footer>
+
 </body>
 </html>

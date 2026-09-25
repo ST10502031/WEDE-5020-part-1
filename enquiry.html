@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire | Abby Luxe Hair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <img src="images/logo.jpg" alt="Abby Luxe Hair logo">
+                <span>Abby Luxe Hair</span>
+            </div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="enquiry.html" class="active">Enquire</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Product &amp; Service Enquiry</h1>
+        <p>Interested in one of our wigs or hair care products? Tell us what you're after and we'll give you an instant estimate on cost and availability.</p>
+    </section>
+
+    <main class="section container" style="padding-top: var(--space-lg);">
+        <div class="form-card">
+            <form id="enquiry-form" action="https://formsubmit.co/ajax/enquiries@abbyluxehair.co.za" method="POST" novalidate>
+
+                <div class="field">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" required minlength="2" maxlength="80" autocomplete="name">
+                    <p class="error-message" id="fullName-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                    <p class="error-message" id="email-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g. 0821234567" autocomplete="tel">
+                    <p class="error-message" id="phone-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="enquiryType">Type of Enquiry <span class="required">*</span></label>
+                    <select id="enquiryType" name="enquiryType" required>
+                        <option value="">-- Please select --</option>
+                        <option value="Product Enquiry">Product enquiry</option>
+                        <option value="Availability Check">Availability / stock check</option>
+                        <option value="Bulk / Wholesale">Bulk or wholesale order</option>
+                        <option value="Custom Order">Custom order</option>
+                    </select>
+                    <p class="error-message" id="enquiryType-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="productCategory">Product Category <span class="required">*</span></label>
+                    <select id="productCategory" name="productCategory" required>
+                        <option value="">-- Please select --</option>
+                        <option value="Wigs">Wigs</option>
+                        <option value="Hair Care Products">Hair care products</option>
+                        <option value="Accessories">Accessories</option>
+                    </select>
+                    <p class="error-message" id="productCategory-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="productDetail">Specific Product / Details</label>
+                    <input type="text" id="productDetail" name="productDetail" maxlength="100" placeholder="e.g. Straight bob wig, 14 inch">
+                </div>
+
+                <div class="field">
+                    <label>Preferred Contact Method <span class="required">*</span></label>
+                    <div class="radio-group" id="contactMethod">
+                        <label><input type="radio" name="contactMethod" value="Email" required> Email</label>
+                        <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
+                        <label><input type="radio" name="contactMethod" value="WhatsApp"> WhatsApp</label>
+                    </div>
+                    <p class="error-message" id="contactMethod-error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="message">Additional Message</label>
+                    <textarea id="message" name="message" maxlength="400" placeholder="Any extra details we should know..."></textarea>
+                    <p class="char-count"><span id="message-count">0</span>/400</p>
+                </div>
+
+                <button type="submit" class="btn-primary" id="enquiry-submit-btn">Get My Estimate</button>
+            </form>
+
+            <div class="response-panel" id="enquiry-response"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Abby Luxe Hair</h4>
+                <p style="color:#aaa; font-size: var(--fs-sm);">Quality and affordable wigs and hair care products, so you can look good and feel confident, always.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a><br>
+                <a href="about.html">About us</a><br>
+                <a href="services.html">Services</a>
+            </div>
+            <div>
+                <h4>Get In Touch</h4>
+                <a href="gallery.html">Gallery</a><br>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; ST10502031 Abby Luxe Hair</div>
+    </footer>
+
+    <script src="js/form-utils.js"></script>
+    <script src="js/enquiry.js"></script>
+</body>
+</html>
