@@ -29,6 +29,205 @@ Abby luxe/
 ```
 
 
+Identified strengths and weaknesses.
+
+Proposed improvements.
+
+Planned website pages.
+
+Planned website functionality.
+
+Selected the initial colour scheme.
+
+Planned typography.
+
+Planned the homepage layout.
+
+Created low-fidelity wireframes.
+
+Identified technical requirements.
+
+Planned the domain and hosting requirements.
+
+Identified development tools.
+
+Phase 1 Key Achievements
+
+svg
+
+The main achievements of Phase 1 are:
+
+Established Abby Luxe Hair as the selected organisation.
+
+Identified the purpose of the website.
+
+Defined the target audience.
+
+Established website goals and objectives.
+
+Identified measurable KPIs.
+
+Planned the main website pages.
+
+Created initial wireframes.
+
+Established the proposed visual identity.
+
+Identified the required technologies.
+
+Planned the technical requirements.
+
+Established the foundation for the next stage of development.
+
+Project Timeline
+
+svg
+
+The website project follows the timeline provided for the Web Development module.
+
+Phase 1 focuses on planning and research before moving into the website development stages.
+
+ActivityPhase
+
+
+
+Organisation Selection
+
+Phase 1
+
+Organisation Research
+
+Phase 1
+
+Website Proposal
+
+Phase 1
+
+Target Audience Research
+
+Phase 1
+
+Website Goals and Objectives
+
+Phase 1
+
+Sitemap Planning
+
+Phase 1
+
+Wireframe Development
+
+Phase 1
+
+Technical Planning
+
+Phase 1
+
+HTML Development
+
+Following Phase
+
+CSS Development
+
+Following Phase
+
+JavaScript Development
+
+Following Phase
+
+Testing and Final Improvements
+
+Final Phase
+
+Project Information
+
+svg
+
+Project: Abby Luxe Hair Website
+
+Student: Abongile Manzitshana
+
+Student Number: ST10502031
+
+Module: Web Development
+
+Institution: Rosebank College
+
+Project Type: Website Development / Website Redesign
+
+Phase: Phase 1 – Planning and Foundation
+
+Proposal Submission Date: 21 August 2026
+
+References
+
+svg
+
+Abby Luxe Hair. (2026). Organisation information and business requirements. Information provided for the website development project.
+
+Google Fonts. (n.d.). Google Fonts. Available online at: https://fonts.google.com/
+
+GitHub. (n.d.). GitHub. Available online at: https://github.com/
+
+Mozilla Developer Network. (n.d.). MDN Web Docs: HTML, CSS and JavaScript. Available online at: https://developer.mozilla.org/
+
+Rosebank College. (2026). Web Development Module. Course material and assessment requirements.
+
+W3C. (n.d.). World Wide Web Consortium. Available online at: https://www.w3.org/
+
+Conclusion
+
+svg
+
+Phase 1 established the foundation for the Abby Luxe Hair website development project. During this phase, the organisation, target audience, website requirements, goals and objectives were identified.
+
+The planning process also established the proposed website structure, design direction, technical requirements and low-fidelity wireframes. The website will focus on providing customers with a professional and user-friendly platform where they can learn about Abby Luxe Hair, view products and contact the business.
+
+The proposed design combines dark pink, black, gold and white or cream to create a modern and feminine appearance that represents the Abby Luxe Hair brand.
+
+The information and planning completed during Phase 1 will be used as the foundation for the following stages of the website development process.
+
+Aboutsvg
+
+No description, website, or topics provided.
+
+Resources
+
+svgReadme
+
+svgActivity
+
+Stars
+
+svg0 stars
+
+Watchers
+
+svg0 watching
+
+Forks
+
+svg0 forks
+
+Releases
+
+No releases published
+
+Create a new release
+
+Packages
+
+No packages published
+Publish your first package
+
+Contributors1 (1)
+
+@ST10502031 (image)ST10502031
+
+Footer
+
+svg© 2026 Gi
+
 ## Changelog
 
 ### v1.2 — Part 2: CSS Styling & Responsive Design
