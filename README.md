@@ -57,17 +57,7 @@ Abby luxe/
 - Tested all six pages at desktop (1440px), tablet (820px) and mobile (390px) widths using browser
   dev tools to confirm layout, navigation, and form behaviour at each breakpoint.
 
-### v1.1 — Part 3: Forms & JavaScript Validation
-- Added `enquiry.html`: a product/service enquiry form (name, email, phone, enquiry type, product
-  category, preferred contact method, message) with HTML5 + JavaScript validation and an on-page
-  cost/availability estimate generated after submission.
-- Added `contact.html`: a general contact form (name, email, phone, message type, subject, message)
-  with validation and a live character counter.
-- Implemented client-side validation with custom inline error messages (`js/form-utils.js`,
-  `js/enquiry.js`, `js/contact.js`), including a South African phone number pattern and email format
-  checking.
-- Implemented AJAX form submission using the Fetch API against FormSubmit, so both forms submit
-  without a page reload and show a success/error panel in place.
+
 
 ### v1.0 — Part 1: Project Proposal
 - Initial site skeleton created: `home.html`, `about.html`, `services.html`, `gallery.html`,
@@ -75,15 +65,7 @@ Abby luxe/
 - Project proposal document completed (`documents/Proposal.pdf`), covering goals and objectives,
   current market analysis, proposed features, and design aesthetic (colour palette, typography).
 
-### Corrections from Part 1 Feedback
-> **To complete:** add the specific corrections made in response to your lecturer's Part 1 feedback
-> here, e.g. changes to goals/objectives, the current analysis, proposed features, or the design
-> aesthetic. List each point raised and the corresponding change made.
-
-- [ ] *(add feedback point 1 and how it was addressed)*
-- [ ] *(add feedback point 2 and how it was addressed)*
-
-## References
+#
 
 - IIE. 2026. *IT Professional Practice / Web Development Module Manual*. The Independent Institute of Education.
 - MDN Web Docs. n.d. *CSS Grid Layout*. Mozilla. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
