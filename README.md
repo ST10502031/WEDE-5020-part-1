@@ -28,14 +28,6 @@ Abby luxe/
     └── Proposal.pdf       # Original Part 1 project proposal
 ```
 
-## ⚠️ Before Deploying
-
-Both `enquiry.html` and `contact.html` submit to a placeholder email via FormSubmit
-(`https://formsubmit.co/ajax/enquiries@abbyluxehair.co.za`). Before going live:
-
-1. Replace the placeholder address in both files' `<form action="...">` with the real business email.
-2. Submit each form once after deploying and click the confirmation link FormSubmit emails to that
-   address — submissions silently fail until this is done.
 
 ## Changelog
 
