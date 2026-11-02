@@ -1,131 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquire | Abby Luxe Hair</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wig Enquiry &amp; Instant Quote | Abby Luxe Hair</title>
+<meta name="description" content="Request an instant wig quote from Abby Luxe Hair. Choose your style, length and delivery, then see the estimated price, availability and ready date.">
+<meta name="keywords" content="wig quote, wig enquiry, buy a wig online, wig price estimate, lace front wig order, wig delivery South Africa">
+<meta name="author" content="Abby Luxe Hair">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#b83269">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Abby Luxe Hair">
+<meta property="og:title" content="Wig Enquiry &amp; Instant Quote | Abby Luxe Hair">
+<meta property="og:description" content="Request an instant wig quote from Abby Luxe Hair. Choose your style, length and delivery, then see the estimated price, availability and ready date.">
+<meta property="og:locale" content="en_ZA">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="images/abby-luxe-hair-logo.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-brand">
-                <img src="images/logo.jpg" alt="Abby Luxe Hair logo">
-                <span>Abby Luxe Hair</span>
-            </div>
-            <div class="nav-links">
-                <a href="home.html">Home</a>
-                <a href="about.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="enquiry.html" class="active">Enquire</a>
-                <a href="contact.html">Contact us</a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="page-hero">
-        <h1>Product &amp; Service Enquiry</h1>
-        <p>Interested in one of our wigs or hair care products? Tell us what you're after and we'll give you an instant estimate on cost and availability.</p>
-    </section>
-
-    <main class="section container" style="padding-top: var(--space-lg);">
-        <div class="form-card">
-            <form id="enquiry-form" action="https://formsubmit.co/ajax/enquiries@abbyluxehair.co.za" method="POST" novalidate>
-
-                <div class="field">
-                    <label for="fullName">Full Name <span class="required">*</span></label>
-                    <input type="text" id="fullName" name="fullName" required minlength="2" maxlength="80" autocomplete="name">
-                    <p class="error-message" id="fullName-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="email">Email Address <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required autocomplete="email">
-                    <p class="error-message" id="email-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="phone">Phone Number <span class="required">*</span></label>
-                    <input type="tel" id="phone" name="phone" required placeholder="e.g. 0821234567" autocomplete="tel">
-                    <p class="error-message" id="phone-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="enquiryType">Type of Enquiry <span class="required">*</span></label>
-                    <select id="enquiryType" name="enquiryType" required>
-                        <option value="">-- Please select --</option>
-                        <option value="Product Enquiry">Product enquiry</option>
-                        <option value="Availability Check">Availability / stock check</option>
-                        <option value="Bulk / Wholesale">Bulk or wholesale order</option>
-                        <option value="Custom Order">Custom order</option>
-                    </select>
-                    <p class="error-message" id="enquiryType-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="productCategory">Product Category <span class="required">*</span></label>
-                    <select id="productCategory" name="productCategory" required>
-                        <option value="">-- Please select --</option>
-                        <option value="Wigs">Wigs</option>
-                        <option value="Hair Care Products">Hair care products</option>
-                        <option value="Accessories">Accessories</option>
-                    </select>
-                    <p class="error-message" id="productCategory-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="productDetail">Specific Product / Details</label>
-                    <input type="text" id="productDetail" name="productDetail" maxlength="100" placeholder="e.g. Straight bob wig, 14 inch">
-                </div>
-
-                <div class="field">
-                    <label>Preferred Contact Method <span class="required">*</span></label>
-                    <div class="radio-group" id="contactMethod">
-                        <label><input type="radio" name="contactMethod" value="Email" required> Email</label>
-                        <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
-                        <label><input type="radio" name="contactMethod" value="WhatsApp"> WhatsApp</label>
-                    </div>
-                    <p class="error-message" id="contactMethod-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="message">Additional Message</label>
-                    <textarea id="message" name="message" maxlength="400" placeholder="Any extra details we should know..."></textarea>
-                    <p class="char-count"><span id="message-count">0</span>/400</p>
-                </div>
-
-                <button type="submit" class="btn-primary" id="enquiry-submit-btn">Get My Estimate</button>
-            </form>
-
-            <div class="response-panel" id="enquiry-response"></div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h4>Abby Luxe Hair</h4>
-                <p style="color:#aaa; font-size: var(--fs-sm);">Quality and affordable wigs and hair care products, so you can look good and feel confident, always.</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <a href="home.html">Home</a><br>
-                <a href="about.html">About us</a><br>
-                <a href="services.html">Services</a>
-            </div>
-            <div>
-                <h4>Get In Touch</h4>
-                <a href="gallery.html">Gallery</a><br>
-                <a href="contact.html">Contact us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">&copy; ST10502031 Abby Luxe Hair</div>
-    </footer>
-
-    <script src="js/form-utils.js"></script>
-    <script src="js/enquiry.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<nav class="navbar container" aria-label="Main navigation">
+<a class="brand" href="home.html"><img src="images/abby-luxe-hair-logo.jpg" alt="Abby Luxe Hair logo: pink flowing hair above the word Abby" width="68" height="68"><span>Abby Luxe Hair</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="nav-toggle-bars" aria-hidden="true"></span><span>Menu</span></button>
+<div class="nav-links" id="nav-links"><a href="home.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a class="active" aria-current="page" href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></div>
+</nav>
+</header>
+<main id="main" tabindex="-1">
+<section class="page-banner"><div class="container"><p class="eyebrow">Free Quote</p><h1>Enquire About Our Wigs</h1><p>Tell us what you are after and see an instant estimate, availability and ready date.</p></div></section>
+<section class="section">
+<div class="container two-col">
+<aside class="reveal">
+<h2>How it works</h2>
+<ol class="steps">
+<li><strong>Choose your style.</strong> Pick a wig, hair care product or service and any extras.</li>
+<li><strong>Tell us how to reach you.</strong> Add your contact details and preferred date.</li>
+<li><strong>See your estimate.</strong> We show a price, availability and expected ready date straight away.</li>
+<li><strong>We confirm.</strong> Abby Luxe Hair contacts you to confirm the final details.</li>
+</ol>
+<p class="notice">Just have a question? Use the <a href="contact.html"><strong>contact page</strong></a> to send us a message instead.</p>
+</aside>
+<div>
+<form id="enquiry-form" class="form-card" action="enquiry.html" method="get" novalidate aria-labelledby="enquiry-heading">
+<h2 id="enquiry-heading">Request a quote</h2>
+<p class="hint">Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+<div class="error-summary" role="alert" tabindex="-1" hidden></div>
+<fieldset><legend>Your details</legend>
+<div class="form-group ">
+<label for="fullName">Full name <span class="req" aria-hidden="true">*</span></label>
+<input id="fullName" name="fullName" type="text" autocomplete="name" aria-describedby="fullName-error">
+<p class="field-error" id="fullName-error" aria-live="polite"></p>
+</div>
+<div class="form-row">
+<div class="form-group ">
+<label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+<input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+<p class="field-error" id="email-error" aria-live="polite"></p>
+</div>
+<div class="form-group ">
+<label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+<input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="082 123 4567" aria-describedby="phone-error phone-hint">
+<p class="hint" id="phone-hint">South African number, e.g. 082 123 4567 or +27 82 123 4567.</p><p class="field-error" id="phone-error" aria-live="polite"></p>
+</div>
+</div>
+</fieldset>
+<fieldset><legend>Your enquiry</legend>
+<div class="form-group ">
+<label for="item">Product or service <span class="req" aria-hidden="true">*</span></label>
+<select id="item" name="item" aria-describedby="item-error"><option value="">Choose an item</option></select>
+<p class="field-error" id="item-error" aria-live="polite"></p>
+</div>
+<div id="item-preview" class="item-preview" hidden></div>
+<div class="form-row">
+<div id="length-wrap"><div class="form-group ">
+<label for="length">Length <span class="req" aria-hidden="true">*</span></label>
+<select id="length" name="length" aria-describedby="length-error"><option value="">Choose a length</option></select>
+<p class="field-error" id="length-error" aria-live="polite"></p>
+</div></div>
+<div class="form-group ">
+<label for="quantity">Quantity <span class="req" aria-hidden="true">*</span></label>
+<input id="quantity" name="quantity" type="number" min="1" max="10" step="1" value="1" inputmode="numeric" aria-describedby="quantity-error quantity-hint">
+<p class="hint" id="quantity-hint">Between 1 and 10.</p><p class="field-error" id="quantity-error" aria-live="polite"></p>
+</div>
+</div>
+<fieldset><legend>Optional extras</legend><div id="extras-list"></div></fieldset>
+</fieldset>
+<fieldset><legend>Delivery <span class="req" aria-hidden="true">*</span></legend>
+<div class="choice-group" role="radiogroup" aria-describedby="delivery-error">
+<label class="choice"><input type="radio" id="delivery" name="delivery" value="collect"> Collection (free)</label>
+<label class="choice"><input type="radio" id="delivery-courier" name="delivery" value="courier"> Courier (R99 flat rate)</label>
+</div>
+<p class="field-error" id="delivery-error" aria-live="polite"></p>
+<div id="city-wrap" hidden><div class="form-group ">
+<label for="city">Delivery suburb or city <span class="req" aria-hidden="true">*</span></label>
+<input id="city" name="city" type="text" autocomplete="address-level2" aria-describedby="city-error">
+<p class="field-error" id="city-error" aria-live="polite"></p>
+</div></div>
+</fieldset>
+<div class="form-group ">
+<label for="date">Preferred date <span class="req" aria-hidden="true">*</span></label>
+<input id="date" name="date" type="date" aria-describedby="date-error date-hint">
+<p class="hint" id="date-hint">We trade Monday to Saturday. Choose a date within the next 90 days.</p><p class="field-error" id="date-error" aria-live="polite"></p>
+</div>
+<div class="form-group ">
+<label for="notes">Notes <span class="hint">(optional)</span></label>
+<textarea id="notes" name="notes" rows="4" aria-describedby="notes-error notes-hint"></textarea><p class="char-count" id="notes-count"></p>
+<p class="hint" id="notes-hint">Anything else we should know, such as colour or cap size (maximum 300 characters).</p><p class="field-error" id="notes-error" aria-live="polite"></p>
+</div>
+<div class="form-group"><label class="choice"><input type="checkbox" id="consent" name="consent" value="yes" aria-describedby="consent-error"> <span>I agree that Abby Luxe Hair may contact me about this enquiry. <span class="req" aria-hidden="true">*</span></span></label><p class="field-error" id="consent-error" aria-live="polite"></p></div>
+<div class="form-actions"><button class="btn" type="submit">Get my estimate</button><button class="btn btn-ghost" type="reset">Clear form</button></div>
+</form>
+<div id="enquiry-result" aria-live="polite" hidden></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div><h3>Abby Luxe Hair</h3><p>Quality, affordable wigs and hair care products designed to help you look and feel confident.</p></div>
+<div><h3>Explore</h3><p><a href="home.html">Home</a><br><a href="about.html">About Us</a><br><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a></p></div>
+<div><h3>Connect</h3><p><a href="enquiry.html">Get a Quote</a><br><a href="contact.html">Contact Us</a><br><a href="mailto:info@abbyluxe.co.za">info@abbyluxe.co.za</a></p></div>
+</div><p class="copyright">&copy; 2026 ST10502031 Abby Luxe Hair. All rights reserved.</p></div></footer>
+<script src="js/products.js" defer></script>
+<script src="js/forms.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/enquiry.js" defer></script>
 </body>
 </html>

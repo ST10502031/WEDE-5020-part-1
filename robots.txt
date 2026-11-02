@@ -1,0 +1,7 @@
+# robots.txt for Abby Luxe Hair
+User-agent: *
+Allow: /
+Disallow: /documents/
+
+# Replace the domain below with your deployed site address.
+Sitemap: https://abby-luxe-hair.netlify.app/sitemap.xml

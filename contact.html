@@ -1,117 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Abby Luxe Hair</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Abby Luxe Hair | Message Us &amp; Find Our Locations</title>
+<meta name="description" content="Contact Abby Luxe Hair about wigs and hair care. Send a message, email us or use the interactive map to find our studio and collection points.">
+<meta name="keywords" content="contact Abby Luxe Hair, wig shop contact, wig store location, hair care enquiry, wig fittings, collection points">
+<meta name="author" content="Abby Luxe Hair">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#b83269">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Abby Luxe Hair">
+<meta property="og:title" content="Contact Abby Luxe Hair | Message Us &amp; Find Our Locations">
+<meta property="og:description" content="Contact Abby Luxe Hair about wigs and hair care. Send a message, email us or use the interactive map to find our studio and collection points.">
+<meta property="og:locale" content="en_ZA">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="images/abby-luxe-hair-logo.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "Abby Luxe Hair",
+ "description": "Quality and affordable wigs and hair care products.",
+ "email": "info@abbyluxe.co.za",
+ "areaServed": "South Africa",
+ "priceRange": "RR",
+ "openingHours": "Mo-Sa",
+ "makesOffer": [
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Product",
+    "name": "Straight HD Lace Wig"
+   }
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Product",
+    "name": "Body Wave Lace Wig"
+   }
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Product",
+    "name": "Deep Wave Wig"
+   }
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Product",
+    "name": "Curly Wig"
+   }
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Product",
+    "name": "Sleek Bob Wig"
+   }
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Product",
+    "name": "Wig Care Kit"
+   }
+  }
+ ]
+}</script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-brand">
-                <img src="images/logo.jpg" alt="Abby Luxe Hair logo">
-                <span>Abby Luxe Hair</span>
-            </div>
-            <div class="nav-links">
-                <a href="home.html">Home</a>
-                <a href="about.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="enquiry.html">Enquire</a>
-                <a href="contact.html" class="active">Contact us</a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="page-hero">
-        <h1>Get In Touch</h1>
-        <p>Questions, feedback, or just want to say hi? Send us a message and we'll get back to you as soon as we can.</p>
-    </section>
-
-    <main class="section container" style="padding-top: var(--space-lg);">
-        <div class="form-card">
-            <form id="contact-form" action="https://formsubmit.co/ajax/enquiries@abbyluxehair.co.za" method="POST" novalidate>
-
-                <div class="field">
-                    <label for="c-fullName">Full Name <span class="required">*</span></label>
-                    <input type="text" id="c-fullName" name="fullName" required minlength="2" maxlength="80" autocomplete="name">
-                    <p class="error-message" id="c-fullName-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="c-email">Email Address <span class="required">*</span></label>
-                    <input type="email" id="c-email" name="email" required autocomplete="email">
-                    <p class="error-message" id="c-email-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="c-phone">Phone Number</label>
-                    <input type="tel" id="c-phone" name="phone" placeholder="e.g. 0821234567 (optional)" autocomplete="tel">
-                    <p class="error-message" id="c-phone-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="c-messageType">Type of Message <span class="required">*</span></label>
-                    <select id="c-messageType" name="messageType" required>
-                        <option value="">-- Please select --</option>
-                        <option value="General Enquiry">General enquiry</option>
-                        <option value="Feedback">Feedback</option>
-                        <option value="Complaint">Complaint</option>
-                        <option value="Partnership / Collaboration">Partnership or collaboration</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <p class="error-message" id="c-messageType-error"></p>
-                </div>
-
-                <div class="field">
-                    <label for="c-subject">Subject</label>
-                    <input type="text" id="c-subject" name="subject" maxlength="100" placeholder="Brief subject line (optional)">
-                </div>
-
-                <div class="field">
-                    <label for="c-message">Message <span class="required">*</span></label>
-                    <textarea id="c-message" name="message" required minlength="10" maxlength="500" placeholder="Type your message here..."></textarea>
-                    <p class="char-count"><span id="c-message-count">0</span>/500</p>
-                    <p class="error-message" id="c-message-error"></p>
-                </div>
-
-                <!-- FormSubmit configuration -->
-                <input type="hidden" name="_subject" value="New message from Abby Luxe Hair website">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-
-                <button type="submit" class="btn-primary" id="contact-submit-btn">Send Message</button>
-            </form>
-
-            <div class="response-panel" id="contact-response"></div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h4>Abby Luxe Hair</h4>
-                <p style="color:#aaa; font-size: var(--fs-sm);">Quality and affordable wigs and hair care products, so you can look good and feel confident, always.</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <a href="home.html">Home</a><br>
-                <a href="about.html">About us</a><br>
-                <a href="services.html">Services</a>
-            </div>
-            <div>
-                <h4>Get In Touch</h4>
-                <a href="enquiry.html">Enquire</a><br>
-                <a href="gallery.html">Gallery</a>
-            </div>
-        </div>
-        <div class="footer-bottom">&copy; ST10502031 Abby Luxe Hair</div>
-    </footer>
-
-    <script src="js/form-utils.js"></script>
-    <script src="js/contact.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<nav class="navbar container" aria-label="Main navigation">
+<a class="brand" href="home.html"><img src="images/abby-luxe-hair-logo.jpg" alt="Abby Luxe Hair logo: pink flowing hair above the word Abby" width="68" height="68"><span>Abby Luxe Hair</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="nav-toggle-bars" aria-hidden="true"></span><span>Menu</span></button>
+<div class="nav-links" id="nav-links"><a href="home.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="enquiry.html">Enquiry</a><a class="active" aria-current="page" href="contact.html">Contact</a></div>
+</nav>
+</header>
+<main id="main" tabindex="-1">
+<section class="page-banner"><div class="container"><p class="eyebrow">Get In Touch</p><h1>Contact Abby Luxe Hair</h1><p>Have a question about a product or service? Send us a message or find us on the map.</p></div></section>
+<section class="section">
+<div class="container contact-grid">
+<div class="reveal"><h2>Let's Connect</h2><p>Use the details below, send a message with the form, or <a href="enquiry.html"><strong>request a quote</strong></a> for a specific wig.</p>
+<ul class="contact-list">
+<li><strong>WhatsApp</strong><br>Available for product enquiries</li>
+<li><strong>Email</strong><br><a href="mailto:info@abbyluxe.co.za">info@abbyluxe.co.za</a></li>
+<li><strong>Social Media</strong><br>Follow Abby Luxe Hair for updates</li>
+<li><strong>Business Hours</strong><br>Monday &ndash; Saturday</li>
+</ul></div>
+<form id="contact-form" class="form-card" action="mailto:info@abbyluxe.co.za" method="post" enctype="text/plain" novalidate aria-labelledby="contact-heading">
+<h2 id="contact-heading">Send us a message</h2>
+<p class="hint">Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required. Your message opens in your email app, addressed to Abby Luxe Hair.</p>
+<div class="error-summary" role="alert" tabindex="-1" hidden></div>
+<div class="form-group ">
+<label for="fullName">Full name <span class="req" aria-hidden="true">*</span></label>
+<input id="fullName" name="fullName" type="text" autocomplete="name" aria-describedby="fullName-error">
+<p class="field-error" id="fullName-error" aria-live="polite"></p>
+</div>
+<div class="form-row">
+<div class="form-group ">
+<label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+<input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+<p class="field-error" id="email-error" aria-live="polite"></p>
+</div>
+<div class="form-group ">
+<label for="phone">Phone number <span id="phone-required" class="req" hidden>(required for calls and WhatsApp)</span> <span class="hint">(optional)</span></label>
+<input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="082 123 4567" aria-describedby="phone-error phone-hint">
+<p class="hint" id="phone-hint">South African number, e.g. 082 123 4567.</p><p class="field-error" id="phone-error" aria-live="polite"></p>
+</div>
+</div>
+<div class="form-group ">
+<label for="type">Type of message <span class="req" aria-hidden="true">*</span></label>
+<select id="type" name="type" aria-describedby="type-error"><option value="">Choose a message type</option><option>General question</option><option>Product enquiry</option><option>Order status</option><option>Feedback or compliment</option><option>Complaint</option><option>Collaboration or business</option></select>
+<p class="field-error" id="type-error" aria-live="polite"></p>
+</div>
+<fieldset><legend>How should we reply? <span class="req" aria-hidden="true">*</span></legend>
+<div class="choice-group" role="radiogroup" aria-describedby="method-error">
+<label class="choice"><input type="radio" id="method" name="method" value="email"> Email</label>
+<label class="choice"><input type="radio" id="method-phone" name="method" value="phone"> Phone call</label>
+<label class="choice"><input type="radio" id="method-whatsapp" name="method" value="whatsapp"> WhatsApp</label>
+</div>
+<p class="field-error" id="method-error" aria-live="polite"></p>
+</fieldset>
+<div class="form-group ">
+<label for="subject">Subject <span class="req" aria-hidden="true">*</span></label>
+<input id="subject" name="subject" type="text" aria-describedby="subject-error subject-hint">
+<p class="hint" id="subject-hint">5 to 80 characters.</p><p class="field-error" id="subject-error" aria-live="polite"></p>
+</div>
+<div class="form-group ">
+<label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+<textarea id="message" name="message" rows="6" aria-describedby="message-error message-hint"></textarea><p class="char-count" id="message-count"></p>
+<p class="hint" id="message-hint">Between 20 and 1000 characters.</p><p class="field-error" id="message-error" aria-live="polite"></p>
+</div>
+<div class="form-group"><label class="choice"><input type="checkbox" id="consent" name="consent" value="yes" aria-describedby="consent-error"> <span>I agree that Abby Luxe Hair may use these details to reply to me. <span class="req" aria-hidden="true">*</span></span></label><p class="field-error" id="consent-error" aria-live="polite"></p></div>
+<div class="form-actions"><button class="btn" type="submit">Prepare my email</button><button class="btn btn-ghost" type="reset">Clear form</button></div>
+</form>
+<div id="contact-result" aria-live="polite" hidden></div>
+</div>
+</section>
+<section class="section" aria-labelledby="map-heading">
+<div class="container reveal">
+<div class="section-heading"><p class="eyebrow">Find Us</p><h2 id="map-heading">Our locations</h2><p>Select a location to zoom in, or let the map find the one nearest to you.</p></div>
+<div class="map-section">
+<div class="map-panel">
+<ul class="location-list" id="location-list"></ul>
+<div class="form-actions"><button class="btn btn-small btn-ghost" type="button" id="map-show-all">Show all</button><button class="btn btn-small" type="button" id="map-nearest">Find my nearest</button></div>
+<p class="map-status" id="map-status" role="status" aria-live="polite"></p>
+</div>
+<div id="map" role="region" aria-label="Interactive map of Abby Luxe Hair locations"></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div><h3>Abby Luxe Hair</h3><p>Quality, affordable wigs and hair care products designed to help you look and feel confident.</p></div>
+<div><h3>Explore</h3><p><a href="home.html">Home</a><br><a href="about.html">About Us</a><br><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a></p></div>
+<div><h3>Connect</h3><p><a href="enquiry.html">Get a Quote</a><br><a href="contact.html">Contact Us</a><br><a href="mailto:info@abbyluxe.co.za">info@abbyluxe.co.za</a></p></div>
+</div><p class="copyright">&copy; 2026 ST10502031 Abby Luxe Hair. All rights reserved.</p></div></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="js/forms.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/map.js" defer></script>
 </body>
 </html>
