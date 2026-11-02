@@ -1,860 +1,674 @@
-# Abby Luxe Hair — Website Project
+# ABBY LUXE HAIR — WEBSITE DEVELOPMENT PROJECT
 
-**Module:** Web Development (Introduction) — WEDE5020
-**Student Number:** ST10502031
+**Module:** WEDE5020 — Web Development  
+**Student Name:** Abongile Manzitshana  
+**Student Number:** ST10502031  
+**Institution:** Rosebank College  
+**Project:** Abby Luxe Hair Website  
+**Assessment:** Portfolio of Evidence (POE)  
+**Deployment Platform:** Netlify  
 
-A responsive multi-page website for Abby Luxe Hair, a small business selling wigs and hair care products, built as part of the WEDE5020 Portfolio of Evidence.
+**Live Website:** https://6ae8eb31692388404e15eac1--abby-luxe-hair.netlify.app/home
 
-## Project Structure
+---
 
-```
-Abby luxe/
+# 1. PROJECT OVERVIEW
+
+Abby Luxe Hair is a South African small business specialising in wigs and hair care products. This project focuses on planning, designing and developing a professional, responsive website that establishes an online presence for the business.
+
+The website is intended to provide customers with a convenient platform where they can explore products, learn about the business, view images and communicate with Abby Luxe Hair.
+
+The website follows a modern, feminine and luxury-inspired design using dark pink, black, gold and cream. The design aims to reflect the business's identity while maintaining a clean and user-friendly experience.
+
+The project is divided into three development stages:
+
+- **Part 1:** Project planning, research and website proposal.
+- **Part 2:** Website structure, HTML development, CSS styling and responsive design.
+- **Part 3:** JavaScript functionality, interactive features, form validation, SEO improvements, testing and final documentation.
+
+# 2. PROJECT GOALS AND OBJECTIVES
+
+The main goal is to create a professional online platform that improves Abby Luxe Hair's visibility and makes its products and services more accessible to potential customers.
+
+## 2.1 Project objectives
+
+- Establish a professional online presence.
+- Showcase wigs and hair care products.
+- Provide customers with information about the business.
+- Improve communication between the business and customers.
+- Encourage product enquiries.
+- Create a consistent brand identity.
+- Make the website accessible across desktop, tablet and mobile devices.
+- Improve the customer browsing experience.
+- Provide a platform that can support future business growth.
+
+## 2.2 Key Performance Indicators
+
+| KPI | Measurement |
+|---|---|
+| Website traffic | Number of website visitors |
+| Product views | Number of product views |
+| Customer enquiries | Number of enquiries received |
+| Social media engagement | Clicks on social media links |
+| Customer interest | Product enquiries and requests |
+| Mobile traffic | Number of visitors using mobile devices |
+
+# 3. BUSINESS BACKGROUND
+
+Abby Luxe Hair is a small business operating in the hair and beauty industry. The business focuses on providing wigs and hair care products to customers who value appearance, confidence and convenience.
+
+A dedicated website provides an opportunity to present the business professionally and create a central location for product information and customer communication.
+
+## 3.1 Mission statement
+
+The mission of Abby Luxe Hair is to provide customers with quality and affordable wigs and hair care products while helping them look good, feel confident and express their personal style.
+
+## 3.2 Vision statement
+
+The vision of Abby Luxe Hair is to become a recognised brand in the hair and beauty industry through quality products, excellent customer service and an attractive online presence.
+
+## 3.3 Target audience
+
+The website primarily targets women between the ages of 18 and 45 who are interested in wigs, beauty and hair care.
+
+The target audience includes:
+
+- Women who regularly wear wigs.
+- Young adults interested in beauty and fashion.
+- Working professionals looking for convenient hair products.
+- Customers interested in affordable wigs.
+- Individuals looking for hair care products.
+- Social media users interested in beauty brands.
+
+# 4. WEBSITE STRUCTURE
+
+The website is organised into different pages to make information easy to access.
+
+| Page | File | Description |
+|---|---|---|
+| Home | `home.html` | Introduces Abby Luxe Hair and highlights the business |
+| About | `about.html` | Provides information about the business |
+| Services | `services.html` | Displays products and services |
+| Gallery | `gallery.html` | Showcases product and lifestyle images |
+| Enquiry | `enquiry.html` | Planned page for product-related enquiries |
+| Contact | `contact.html` | Provides contact information and a contact form |
+
+The enquiry page is part of the intended Part 3 structure and should be added if it is not yet present in the repository.
+
+# 5. DESIGN AND USER EXPERIENCE
+
+## 5.1 Design concept
+
+The website uses a luxury-inspired feminine design that reflects the Abby Luxe Hair brand.
+
+The main design priorities are consistency, simplicity, readability and ease of navigation.
+
+## 5.2 Colour palette
+
+| Colour | Purpose |
+|---|---|
+| Dark pink | Brand identity and highlights |
+| Black | Text and contrast |
+| Gold | Luxury-inspired accents |
+| Cream | Backgrounds and visual balance |
+| White | Content readability |
+
+## 5.3 Typography
+
+The website uses elegant headings and readable body text.
+
+- **Playfair Display:** Used for headings and prominent text.
+- **Montserrat:** Used for body text and general website content in the supplied Part 2 implementation.
+
+## 5.4 Layout
+
+The website uses CSS Grid and Flexbox to arrange content and create responsive layouts.
+
+The design includes:
+
+- Consistent navigation.
+- Structured content sections.
+- Product cards.
+- Image galleries.
+- Responsive layouts.
+- Clear calls to action.
+- Consistent footer styling.
+
+## 5.5 User experience principles
+
+The following principles guide the website design:
+
+- Easy navigation.
+- Readable typography.
+- Consistent colours.
+- Clear buttons and links.
+- Mobile-friendly layouts.
+- Appropriate spacing.
+- Visible interaction states.
+- Accessible form labels and controls.
+
+# 6. PART 1 — PROJECT PLANNING AND FOUNDATION
+
+Part 1 focused on researching the organisation and establishing the foundation of the website.
+
+## 6.1 Activities completed
+
+- Selected Abby Luxe Hair as the organisation.
+- Identified the business requirements.
+- Defined the project objectives.
+- Identified the target audience.
+- Established the mission and vision.
+- Identified key performance indicators.
+- Considered the business's existing online presence.
+- Planned the website structure.
+- Selected the brand colour palette.
+- Selected typography.
+- Developed initial wireframe concepts.
+- Identified the technologies required.
+- Considered hosting and domain requirements.
+
+## 6.2 Website planning
+
+The initial website plan included the following sections:
+
+**Homepage**
+- Logo and navigation.
+- Hero section.
+- Business introduction.
+- Featured products.
+- Calls to action.
+- Social media links.
+- Footer.
+
+**Products and services**
+- Products heading.
+- Product categories.
+- Product images.
+- Product descriptions.
+- Enquiry options.
+
+**About page**
+- Business background.
+- Mission.
+- Vision.
+- Brand information.
+
+**Gallery**
+- Product images.
+- Lifestyle images.
+- Visual presentation of the brand.
+
+**Contact**
+- Contact information.
+- Customer enquiry form.
+- Social media links.
+
+## 6.3 Technical planning
+
+The following technologies were identified for development:
+
+- HTML5.
+- CSS3.
+- JavaScript.
+- Visual Studio Code.
+- Git.
+- GitHub.
+- Browser Developer Tools.
+
+The proposed domain name is `www.abbyluxehair.co.za`, subject to availability and registration.
+
+# 7. PART 2 — HTML DEVELOPMENT AND CSS STYLING
+
+Part 2 focused on creating the website pages, applying styling and implementing responsive layouts.
+
+The website uses an external stylesheet located at:
+
+`css/style.css`
+
+This allows styling to be managed centrally and applied consistently across the website.
+
+## 7.1 CSS implementation
+
+The stylesheet includes:
+
+- CSS reset.
+- Reusable CSS custom properties.
+- Brand colours.
+- Typography.
+- Spacing and layout rules.
+- CSS Grid.
+- Flexbox.
+- Responsive breakpoints.
+- Navigation styling.
+- Button styling.
+- Hover and focus states.
+- Gallery layouts.
+- Footer styling.
+
+## 7.2 Responsive design
+
+Responsive design allows the website to adapt to different screen sizes.
+
+Media queries are used to adjust layouts for desktop, tablet and mobile devices.
+
+The Part 2 project included responsive layout work and image optimisation techniques.
+
+## 7.3 Responsive images
+
+Responsive image techniques, including `srcset`, `sizes` and the `<picture>` element where applicable, support suitable image display across different screen sizes.
+
+## 7.4 Part 2 pages
+
+The following pages were developed:
+
+- Home.
+- About.
+- Services.
+- Gallery.
+- Contact.
+
+## 7.5 Part 2 achievement
+
+**Assessment result: 99%**
+
+Part 2 received a 99% assessment result with no corrections required.
+
+This achievement provided a strong foundation for the additional functionality planned for Part 3.
+
+# 8. PART 3 — INTERACTIVE FUNCTIONALITY AND ENHANCEMENTS
+
+Part 3 focuses on developing the website beyond its original static structure by introducing interactive components and improving the overall customer experience.
+
+The following features represent the planned development scope. Their status should be updated once implementation and testing have been completed.
+
+## 8.1 JavaScript functionality
+
+JavaScript will be used to improve the website's interactivity.
+
+Planned functionality includes:
+
+- Interactive tabs.
+- Accordion sections.
+- Modal windows.
+- Dynamic product content.
+- Search functionality.
+- Product filtering.
+- Product sorting.
+- Form validation.
+- Gallery interactions.
+
+## 8.2 Dynamic product catalogue
+
+The product catalogue is intended to make it easier for customers to browse products.
+
+Planned features include:
+
+- Displaying product information dynamically.
+- Searching products by name.
+- Filtering products by category.
+- Sorting products.
+- Viewing product descriptions.
+- Providing product enquiry options.
+
+Only confirmed prices and product availability should be displayed.
+
+## 8.3 Gallery enhancements
+
+The gallery will provide an improved visual experience for customers.
+
+Planned features include:
+
+- Image previews.
+- Larger image viewing.
+- Category filtering.
+- Lightbox functionality.
+- Previous and next image navigation.
+- Keyboard-accessible controls.
+
+## 8.4 Enquiry form
+
+The enquiry form is intended to allow customers to request product information.
+
+Planned fields include:
+
+- Customer name.
+- Email address.
+- Contact number.
+- Product selection.
+- Enquiry details.
+
+Validation will be used to check required information and ensure that submitted details follow the expected format.
+
+## 8.5 Contact form
+
+The contact form will allow customers to send general messages to the business.
+
+Planned functionality includes:
+
+- Required-field validation.
+- Email validation.
+- Clear error messages.
+- Submission feedback.
+- Processing through a configured form service or backend.
+
+Client-side validation alone does not send emails. A working submission endpoint or form service must be configured and tested.
+
+## 8.6 Interactive map
+
+An interactive map may be implemented using Leaflet.
+
+The map should display confirmed business locations and provide customers with location information.
+
+## 8.7 SEO improvements
+
+Search engine optimisation improvements may include:
+
+- Descriptive page titles.
+- Meta descriptions.
+- Relevant keywords.
+- Descriptive image filenames.
+- Image alt text.
+- Semantic HTML.
+- `robots.txt`.
+- `sitemap.xml`.
+
+## 8.8 Accessibility improvements
+
+Accessibility considerations include:
+
+- Keyboard navigation.
+- Visible focus indicators.
+- Descriptive image alt text.
+- Form labels.
+- Readable colour contrast.
+- Semantic HTML elements.
+- Accessible interactive controls.
+
+# 9. TECHNOLOGIES USED
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure |
+| CSS3 | Website styling |
+| JavaScript | Interactive functionality |
+| CSS Grid | Page layouts |
+| Flexbox | Content alignment |
+| Google Fonts | Typography |
+| Visual Studio Code | Development environment |
+| Git | Version control |
+| GitHub | Source code hosting |
+| Netlify | Website deployment |
+| Leaflet | Interactive maps, if implemented |
+| Fetch API | Asynchronous requests, if implemented |
+
+# 10. PROJECT FILE STRUCTURE
+
+The following represents the intended final project structure. The repository should be updated to match the files actually created.
+
+```text
+Abby-Luxe-Hair/
+│
 ├── home.html
 ├── about.html
 ├── services.html
 ├── gallery.html
-├── enquiry.html          # Product/service enquiry form (AJAX + validation)
-├── contact.html          # General contact form (AJAX + validation)
+├── enquiry.html
+├── contact.html
+├── index.html
+├── 404.html
+│
 ├── css/
-│   └── style.css         # Single external stylesheet for the whole site
+│   └── style.css
+│
 ├── js/
-│   ├── form-utils.js     # Shared validation helpers
-│   ├── enquiry.js        # Enquiry form logic (validation, estimate, AJAX)
-│   └── contact.js        # Contact form logic (validation, AJAX)
+│   ├── main.js
+│   ├── products.js
+│   ├── services.js
+│   ├── gallery.js
+│   ├── forms.js
+│   ├── enquiry.js
+│   ├── contact.js
+│   └── map.js
+│
 ├── images/
-│   ├── responsive/       # Multi-width image variants used in srcset
-│   └── ...                # Cropped product/lifestyle images, logo
-└── documents/
-    └── Proposal.pdf       # Original Part 1 project proposal
+│   └── product and lifestyle images
+│
+├── documents/
+│   └── Proposal.pdf
+│
+├── robots.txt
+├── sitemap.xml
+├── README.md
+└── _headers
 ```
-Project Overview
 
+Note: Files such as `enquiry.html`, `index.html`, `404.html` and `_headers` must be added only if they form part of the final implementation. The `_headers` file is relevant to hosting platforms that support Netlify-style header configuration.
 
+# 11. TESTING AND QUALITY ASSURANCE
 
-This project involves the planning and development of a professional website for Abby Luxe Hair, a small South African business that sells wigs and hair care products. The website is being developed as part of the Web Development module at Rosebank College.
+Testing is important to ensure that the website functions correctly and provides a consistent experience.
 
-The purpose of the Abby Luxe Hair website is to create a professional online presence for the business and make it easier for customers to access information about the company and its products. The website will provide customers with a central place to view wigs and hair care products, learn more about Abby Luxe Hair, and contact the business.
+## 11.1 Testing checklist
 
-Abby Luxe Hair focuses on providing customers with quality and affordable hair products. The business mainly targets women and young people who are interested in wigs, hair care and beauty products.
+| Test | Expected result |
+|---|---|
+| Navigation | Links open the correct pages |
+| Homepage | Content and images display correctly |
+| About page | Business information is readable |
+| Services page | Product content displays correctly |
+| Gallery | Images load and display correctly |
+| Forms | Required fields are validated |
+| Email validation | Invalid email formats are rejected |
+| Form submission | Submission is processed by the configured service |
+| Responsive layout | Website adapts to different screen sizes |
+| Search | Relevant products are returned |
+| Filtering | Selected categories display correctly |
+| Sorting | Products appear in the selected order |
+| Gallery lightbox | Images open and close correctly |
+| Map | Confirmed locations display correctly |
+| Accessibility | Keyboard and focus controls work |
 
-The website development project is based on the requirements identified during the planning and research stage. The proposed website will use a modern and feminine design to represent the Abby Luxe Hair brand while keeping the website simple and easy to use.
+## 11.2 Responsive testing
 
-The website will focus on beauty, confidence and style and will provide customers with an organised way to explore the business and its products.
+The website should be tested at the following screen widths:
 
-Website Goals and Objectives
+- Desktop: 1440px.
+- Tablet: 820px.
+- Mobile: 390px.
 
+Testing should be performed using browser developer tools and actual devices where possible.
 
+## 11.3 Browser testing
 
-Primary Goals
+The website should be tested using modern browsers, including:
 
+- Google Chrome.
+- Mozilla Firefox.
+- Microsoft Edge.
+- Safari.
 
+Actual results should be recorded after testing.
 
-The website has been planned to achieve several important business objectives:
+# 12. WEBSITE DEPLOYMENT
 
-Increase Online Visibility: Create a professional online presence for Abby Luxe Hair.
+The Abby Luxe Hair website is deployed using Netlify.
 
-Display Products: Provide customers with an organised way to view wigs and hair care products.
+Netlify provides a platform for publishing the website online and making it accessible through a public URL.
 
-Provide Business Information: Give customers information about Abby Luxe Hair and its values.
+## 12.1 Live website
 
-Improve Customer Communication: Provide easy ways for customers to contact the business.
+**Website name:** Abby Luxe Hair
 
-Increase Customer Enquiries: Encourage customers to enquire about products and availability.
+**Hosting platform:** Netlify
 
-Social Media Integration: Connect the website with the business's social media platforms.
+**Live URL:**
 
-Build Customer Trust: Present the business in a professional and consistent manner.
+https://6ae8eb31692388404e15eac1--abby-luxe-hair.netlify.app/home
 
-Improve Customer Experience: Make it easy for customers to find the information they need.
+The website link above is the deployment URL supplied for this project.
 
-Key Performance Indicators
+## 12.2 Deployment considerations
 
+Before final submission, the following should be checked:
 
+- The live website opens successfully.
+- All navigation links work.
+- All images load correctly.
+- CSS and JavaScript files load correctly.
+- The website works on mobile devices.
+- Forms are connected to a working submission service.
+- The homepage is accessible.
+- No broken links or missing resources remain.
 
-The success of the website will be measured using several key performance indicators:
+# 13. GITHUB AND VERSION CONTROL
 
-KPIHow it will be measured
+Git and GitHub are used to manage project files and track development progress.
 
+Version control helps document changes and makes it possible to review the development history.
 
+## 13.1 Suggested Part 3 commit structure
 
-Website Visits
+The following commit messages can be used when the corresponding work has actually been completed:
 
-Number of people visiting the website
+```bash
+git checkout -b part-3
 
-Product Views
+# Stage 1: Improve the existing website
+git add images css/style.css *.html
+git commit -m "Improve image naming, styling and website consistency"
 
-Number of times products are viewed
+# Stage 2: Interactive components
+git add js/main.js js/products.js js/services.js
+git commit -m "Add interactive components and product catalogue"
 
-Customer Enquiries
-
-Number of customers contacting Abby Luxe Hair
-
-Social Media Clicks
-
-Number of visitors clicking social media links
-
-Sales
-
-Number of sales generated through the website
-
-Mobile Visits
-
-Number of visitors accessing the website using mobile devices
-
-These measurements will help determine whether the website is helping Abby Luxe Hair attract customers and increase its online visibility.
-
-Target Audience
-
-
-
-The Abby Luxe Hair website is aimed primarily at customers who are interested in hair, beauty, wigs and hair care products.
-
-The target audience includes:
-
-Women who use wigs.
-
-Young people interested in beauty and hair.
-
-Professional women looking for convenient hair products.
-
-Consumers looking for affordable wigs.
-
-Customers interested in hair care products.
-
-People who discover products through social media.
-
-Customers looking for quality and affordable hair products.
-
-Current Online Presence
-
-
-
-Abby Luxe Hair does not currently have a fully developed website that acts as the main online platform for the business.
-
-Social media can be used to advertise products and communicate with customers. However, having a dedicated website will provide the business with one central platform where customers can find important information.
-
-The website will allow customers to:
-
-Learn more about Abby Luxe Hair.
-
-View available products.
-
-Read product descriptions.
-
-Find contact information.
-
-Contact the business.
-
-Access WhatsApp.
-
-View social media platforms.
-
-Learn about the business's mission and vision.
-
-Strengths
-
-
-
-Some of the strengths identified during the planning stage include:
-
-The business has a clear focus on hair and beauty products.
-
-Wigs are visual products that can be displayed effectively online.
-
-Good-quality product images can be used to attract customers.
-
-Social media can be connected to the website.
-
-The business has an opportunity to develop a strong brand identity.
-
-Hair and beauty products have a wide potential customer base.
-
-Weaknesses
-
-
-
-Some possible weaknesses identified include:
-
-Customers do not have one website where they can find all the business information.
-
-Product information may not always be available in one place.
-
-New customers may have difficulty finding information about the business.
-
-Customers may need to rely on social media to ask questions.
-
-There is currently no central online platform for displaying the business's products.
-
-Proposed Improvements
-
-
-
-The proposed website will improve these areas by providing:
-
-A professional homepage.
-
-An About Us page.
-
-A Products page.
-
-A Contact page.
-
-Product descriptions and pictures.
-
-Social media links.
-
-A WhatsApp/contact option.
-
-Easy navigation.
-
-Clear calls to action.
-
-A mobile-friendly website.
-
-Phase 1: Planning and Foundation
-
-
-Phase 1 Overview
-
-
-
-The first phase of the Abby Luxe Hair website project focuses on research, planning and establishing the foundation of the website.
-
-During this phase, the organisation was selected and information about the business was gathered. The website requirements were identified based on the needs of the organisation and its target audience.
-
-The planning stage also included identifying the purpose of the website, defining the target audience, establishing website goals and objectives, planning the website structure and creating low-fidelity wireframes.
-
-The purpose of Phase 1 is to create a clear plan before moving on to the actual development and visual styling of the website.
-
-Organisation Selection
-
-
-
-For this website development project, the selected organisation is Abby Luxe Hair.
-
-Abby Luxe Hair is a small business that sells wigs and hair care products. The business aims to provide customers with quality hair products at affordable prices.
-
-The organisation was selected because it provides an opportunity to develop a website that can improve its online presence and make product and business information easier for customers to access.
-
-Business Mission
-
-
-The mission of Abby Luxe Hair is to offer customers quality and affordable wigs and hair care products and help them look good and feel confident and comfortable with their looks.
-
-Business Vision
-
-
-
-The vision of Abby Luxe Hair is to become a recognised brand in the field of hair and beauty with quality products, excellent services and affordable prices.
-
-Proposed Website Structure
-
-
-
-The proposed website will contain the following main pages:
-
-Home Page (home.html)
-
-
-
-The homepage will act as the main entry point to the website.
-
-Planned features include:
-
-Abby Luxe Hair logo.
-
-Navigation menu.
-
-Main image.
-
-Introduction to Abby Luxe Hair.
-
-Featured products.
-
-"Shop Now" button.
-
-Social media links.
-
-Contact information.
-
-Footer.
-
-The homepage will provide visitors with a quick introduction to the business and direct them towards the products and contact information.
-
-About Us (about.html)
-
-
-
-The About Us page will provide additional information about Abby Luxe Hair.
-
-It will include:
-
-Background of the business.
-
-Mission statement.
-
-Vision statement.
-
-Business values.
-
-Information about the products and services.
-
-The purpose of this page is to help customers understand the business and its identity.
-
-Products Page
-
-
-
-The Products page will display the products offered by Abby Luxe Hair.
-
-The planned categories include:
-
-Wigs.
-
-Hair care products.
-
-New products.
-
-Best sellers.
-
-Each product will contain information such as:
-
-Product name.
-
-Product image.
-
-Description.
-
-Price.
-
-Availability.
-
-Contact or enquiry button.
-
-Contact Page
-
-
-
-The Contact page will provide customers with different ways to communicate with Abby Luxe Hair.
-
-The planned features include:
-
-Contact form.
-
-WhatsApp contact.
-
-Email address.
-
-Social media links.
-
-Business hours.
-
-Contact information.
-
-Social Media
-
-
-
-Social media links will be included on the website to allow customers to access Abby Luxe Hair's social media pages.
-
-This will help connect the website with the business's existing social media presence.
-
-Design and User Experience
-
-
-Design Concept
-
-
-
-The Abby Luxe Hair website will use a modern and feminine design because the organisation focuses on hair and beauty products.
-
-The design will be clean and professional without placing too many elements on one page.
-
-The planned colour scheme includes:
-
-Dark Pink
-
-Black
-
-Gold
-
-White/Cream
-
-These colours were selected to create a luxury-inspired appearance while remaining suitable for the Abby Luxe Hair brand.
-
-Typography
-
-
-
-The website will use clear and readable fonts.
-
-Poppins or Montserrat can be used for the main website text because they are simple and easy to read.
-
-Playfair Display can be used for selected headings to create a more elegant appearance.
-
-The headings will be larger than the normal text so that visitors can easily identify different sections of the website.
-
-Homepage Layout
-
-
-
-The planned homepage structure is:
-
-Navigation → Main Image → Introduction → Products → Why Choose Us → Social Media → Contact → Footer
-
-The website will use sufficient spacing between sections to prevent the pages from appearing overcrowded.
-
-User Experience
-
-
-
-The website will focus on providing a simple and user-friendly experience.
-
-The main considerations include:
-
-Simple navigation.
-
-Clear buttons.
-
-Easy-to-read text.
-
-Mobile-friendly design.
-
-Clear product images.
-
-Easy access to contact information.
-
-Consistent colours.
-
-Consistent page structure.
-
-Clear calls to action.
-
-Low-Fidelity Wireframes
-
-
-
-Homepage
-
-
-
-+----------------------------------------------+
-| LOGO     HOME | ABOUT | PRODUCTS | CONTACT   |
-+----------------------------------------------+
-|                                              |
-|                  MAIN IMAGE                  |
-|                                              |
-|                 ABBY LUXE HAIR              |
-|             Beauty • Confidence • Style     |
-|                                              |
-|                 [SHOP NOW]                   |
-+----------------------------------------------+
-|                   ABOUT US                   |
-|                                              |
-|   Short information about the business      |
-+----------------------------------------------+
-|              FEATURED PRODUCTS              |
-|                                              |
-|   [IMAGE]       [IMAGE]       [IMAGE]        |
-|   Product 1     Product 2     Product 3      |
-+----------------------------------------------+
-|                WHY CHOOSE US?                |
-|                                              |
-|       Quality | Affordable | Stylish         |
-+----------------------------------------------+
-|              FOLLOW OUR SOCIALS              |
-+----------------------------------------------+
-|                   CONTACT                    |
-+----------------------------------------------+
-|                    FOOTER                    |
-+----------------------------------------------+
-
-
-
-
-Products Page
-
-
-
-+----------------------------------------------+
-| LOGO     HOME | ABOUT | PRODUCTS | CONTACT   |
-+----------------------------------------------+
-|                 OUR PRODUCTS                 |
-+----------------------------------------------+
-|                                              |
-|   WIGS | HAIR CARE | NEW ARRIVALS            |
-|                                              |
-+----------------------------------------------+
-|                                              |
-| [IMAGE]       [IMAGE]       [IMAGE]          |
-| Product 1     Product 2     Product 3        |
-| Price         Price         Price             |
-| [VIEW]        [VIEW]        [VIEW]            |
-|                                              |
-+----------------------------------------------+
-|                                              |
-| [IMAGE]       [IMAGE]       [IMAGE]          |
-| Product 4     Product 5     Product 6        |
-| Price         Price         Price             |
-| [VIEW]        [VIEW]        [VIEW]            |
-+----------------------------------------------+
-
-
-
-
-Technical Requirements
-
-
-
-Domain
-
-
-
-A possible domain name for the website is:
-
-www.abbyluxehair.co.za
-
-The availability of the domain will need to be checked before purchasing it.
-
-A .co.za domain would be suitable because Abby Luxe Hair is a South African business.
-
-Hosting
-
-
-
-The website will require a hosting service to make it available online.
-
-The hosting service should provide:
-
-SSL certificate.
-
-Enough storage.
-
-Good uptime.
-
-Backups.
-
-Email support.
-
-Enough bandwidth for a small business website.
-
-Programming Languages
-
-
-
-The website will use the following technologies:
-
-HTML
-
-
-
-HTML will be used to create the structure and content of the website.
-
-CSS
-
-
-
-CSS will be used to design the website, including:
-
-Colours.
-
-Fonts.
-
-Layouts.
-
-Spacing.
-
-Responsive design.
-
-JavaScript
-
-
-
-JavaScript will be used later in the development process to add interactive features to the website.
-
-Development Tools
-
-
-
-The planned development tools include:
-
-Visual Studio Code.
-
-GitHub.
-
-Web browsers.
-
-Browser Developer Tools.
-
-The website will also be tested on different screen sizes during the later development stages to ensure that it works correctly across different devices.
-
-Phase 1 Activities
-
-
-
-The main activities completed/planned during Phase 1 include:
-
-Selected Abby Luxe Hair as the organisation.
-
-Conducted initial organisation research.
-
-Identified the business requirements.
-
-Identified the target audience.
-
-Defined the mission and vision.
-
-Established website goals.
-
-Identified website objectives.
-
-Identified key performance indicators.
-
-Analysed the current online presence.
-
-Identified strengths and weaknesses.
-
-Proposed improvements.
-
-Planned website pages.
-
-Planned website functionality.
-
-Selected the initial colour scheme.
-
-Planned typography.
-
-Planned the homepage layout.
-
-Created low-fidelity wireframes.
-
-Identified technical requirements.
-
-Planned the domain and hosting requirements.
-
-Identified development tools.
-
-Phase 1 Key Achievements
-
-
-
-The main achievements of Phase 1 are:
-
-Established Abby Luxe Hair as the selected organisation.
-
-Identified the purpose of the website.
-
-Defined the target audience.
-
-Established website goals and objectives.
-
-Identified measurable KPIs.
-
-Planned the main website pages.
-
-Created initial wireframes.
-
-Established the proposed visual identity.
-
-Identified the required technologies.
-
-Planned the technical requirements.
-
-Established the foundation for the next stage of development.
-
-Project Timeline
-
-
-
-The website project follows the timeline provided for the Web Development module.
-
-Phase 1 focuses on planning and research before moving into the website development stages.
-
-ActivityPhase
-
-
-
-Organisation Selection
-
-Phase 1
-
-Organisation Research
-
-Phase 1
-
-Website Proposal
-
-Phase 1
-
-Target Audience Research
-
-Phase 1
-
-Website Goals and Objectives
-
-Phase 1
-
-Sitemap Planning
-
-Phase 1
-
-Wireframe Development
-
-Phase 1
-
-Technical Planning
-
-Phase 1
-
-HTML Development
-
-Following Phase
-
-CSS Development
-
-Following Phase
-
-JavaScript Development
-
-Following Phase
-
-Testing and Final Improvements
-
-Final Phase
-
-Project Information
-
-svg
-
-Project: Abby Luxe Hair Website
-
-Student: Abongile Manzitshana
-
-Student Number: ST10502031
-
-Module: Web Development
-
-Institution: Rosebank College
-
-Project Type: Website Development / Website Redesign
-
-Phase: Phase 1 – Planning and Foundation
-
-Proposal Submission Date: 21 August 2026
-
-References
-
-
-
-Abby Luxe Hair. (2026). Organisation information and business requirements. Information provided for the website development project.
-
-Google Fonts. (n.d.). Google Fonts. Available online at: https://fonts.google.com/
-
-GitHub. (n.d.). GitHub. Available online at: https://github.com/
-
-Mozilla Developer Network. (n.d.). MDN Web Docs: HTML, CSS and JavaScript. Available online at: https://developer.mozilla.org/
-
-Rosebank College. (2026). Web Development Module. Course material and assessment requirements.
-
-W3C. (n.d.). World Wide Web Consortium. Available online at: https://www.w3.org/
-
-Conclusion
-
-
-
-Phase 1 established the foundation for the Abby Luxe Hair website development project. During this phase, the organisation, target audience, website requirements, goals and objectives were identified.
-
-The planning process also established the proposed website structure, design direction, technical requirements and low-fidelity wireframes. The website will focus on providing customers with a professional and user-friendly platform where they can learn about Abby Luxe Hair, view products and contact the business.
-
-The proposed design combines dark pink, black, gold and white or cream to create a modern and feminine appearance that represents the Abby Luxe Hair brand.
-
-The information and planning completed during Phase 1 will be used as the foundation for the following stages of the website development process.
-
-Aboutsvg
-
-No description, website, or topics provided.
-
-Resources
-
-svgReadme
-
-svgActivity
-
-Stars
-
-svg0 stars
-
-Watchers
-
-svg0 watching
-
-Forks
-
-svg0 forks
-
-Releases
-
-No releases published
-
-Create a new release
-
-Packages
-
-No packages published
-Publish your first package
-
-Contributors1 (1)
-
-@ST10502031 (image)ST10502031
-
-Footer
-
-svg© 2026 Gi
-
-
-
-## Changelog
-
-### v1.2 — Part 2: CSS Styling & Responsive Design
-- Built a single external stylesheet (`css/style.css`) and linked it across all six pages, replacing
-  the inline `style="background-color: pink;"` used in Part 1.
-- Added a CSS reset and a shared set of design tokens (custom properties) for colour palette,
-  typography scale, spacing scale, radius and shadows, so the whole site pulls from one source of truth.
-- Applied a typographic scale using `rem` units (`font-family`, `font-size`, `line-height`,
-  `letter-spacing`) with Playfair Display for headings and Poppins for body text.
-- Rebuilt page layouts using CSS Grid and Flexbox: the navigation bar, the home page hero, the
-  category/product card grids, the four-column feature grid, the gallery mosaic, and the footer.
-- Added decorative and interactive styling: box shadows, rounded corners, and `:hover`, `:focus-visible`
-  and `:active` states on buttons, nav links, product cards and gallery items.
-- Implemented two responsive breakpoints using media queries: tablet (`max-width: 1024px`) and mobile
-  (`max-width: 600px`), adjusting column counts, font sizes, spacing and nav layout at each.
-- Added responsive images using `srcset`, `sizes`, and `<picture>` with real multi-resolution JPEG
-  variants (480w / native width) for the home hero image and the products page texture banner.
-- Populated `about.html`, `services.html`, `gallery.html`, which were empty placeholder pages in
-  Part 1, with real content derived from the Part 1 proposal (mission, vision, target audience,
-  product categories, pricing, and a photo gallery).
-- Rebuilt `home.html`, replacing a broken `<video>` reference to a missing `download.mp4` file with
-  a working responsive hero image.
-- Standardised the header/nav and footer markup across `contact.html` and `enquiry.html` (previously
-  built in Part 3) so all six pages now share identical structure and styling.
-- Fixed a CSS Grid packing gap in the gallery mosaic by adding `grid-auto-flow: dense`.
-- Tested all six pages at desktop (1440px), tablet (820px) and mobile (390px) widths using browser
-  dev tools to confirm layout, navigation, and form behaviour at each breakpoint.
-
-
-
-### v1.0 — Part 1: Project Proposal
-- Initial site skeleton created: `home.html`, `about.html`, `services.html`, `gallery.html`,
-  `contact.html`, with a shared (inline-styled) nav and logo.
-- Project proposal document completed (`documents/Proposal.pdf`), covering goals and objectives,
-  current market analysis, proposed features, and design aesthetic (colour palette, typography).
-
-#
-
-- IIE. 2026. *IT Professional Practice / Web Development Module Manual*. The Independent Institute of Education.
-- MDN Web Docs. n.d. *CSS Grid Layout*. Mozilla. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
-- MDN Web Docs. n.d. *Responsive images*. Mozilla. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
-- MDN Web Docs. n.d. *Using media queries*. Mozilla. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
-- FormSubmit. n.d. *FormSubmit — Free form backend, no JavaScript, no sign up*. Available at: https://formsubmit.co/
-- Google Fonts. n.d. *Playfair Display*. Available at: https://fonts.google.com/specimen/Playfair+Display
+# Stage 3: Gallery improvements
+git add gallery.html js/gallery.js
+git commit -m "Add gallery filters and accessible lightbox"
+
+# Stage 4: Enquiry form
+git add js/enquiry.js enquiry.html
+git commit -m "Add enquiry form validation and submission handling"
+
+# Stage 5: Contact form
+git add js/contact.js contact.html
+git commit -m "Add contact form validation and submission handling"
+
+# Stage 6: Map
+git add js/map.js
+git commit -m "Add interactive business location map"
+
+# Stage 7: SEO and documentation
+git add robots.txt sitemap.xml 404.html index.html README.md
+git commit -m "Add SEO improvements and update project documentation"
+
+# Push branch
+git push -u origin part-3
+
+# Merge changes into main after reviewing
+git checkout main
+git merge part-3
+git push origin main
+```
+
+These commands are examples and should be adjusted to match the actual files and completed changes in the repository.
+
+# 14. CHANGELOG
+
+## Version 1.0 — Part 1: Project Planning
+
+- Selected Abby Luxe Hair as the project organisation.
+- Established project goals and objectives.
+- Identified the target audience.
+- Developed the business mission and vision.
+- Conducted initial business research.
+- Planned website pages and structure.
+- Selected the brand colour palette.
+- Selected typography.
+- Developed initial wireframe concepts.
+- Identified technical requirements.
+- Planned development tools and hosting.
+
+## Version 1.2 — Part 2: HTML and CSS Development
+
+- Developed the website's main HTML pages.
+- Created an external CSS stylesheet.
+- Introduced reusable styling variables.
+- Applied the Abby Luxe Hair brand colour palette.
+- Used Playfair Display and Montserrat typography.
+- Implemented CSS Grid and Flexbox.
+- Added responsive layouts.
+- Added hover and focus states.
+- Improved image presentation.
+- Standardised navigation and footer styling.
+- Added website content.
+- Improved the overall user experience.
+- Tested responsive layouts.
+- Achieved 99% for Part 2 with no corrections required.
+
+## Version 2.0 — Part 3: Functionality and Final Improvements
+
+Part 3 development scope:
+
+- JavaScript functionality.
+- Interactive website components.
+- Dynamic product catalogue.
+- Product search, filtering and sorting.
+- Gallery filtering and lightbox.
+- Enquiry form validation.
+- Contact form validation.
+- Form submission integration.
+- Interactive map.
+- SEO improvements.
+- Accessibility improvements.
+- Final testing.
+- Updated documentation.
+- Final deployment review.
+
+Update this changelog as each feature is implemented and verified.
+
+# 15. REFERENCES
+
+The following resources support the planning and development of the project.
+
+- The Independent Institute of Education (IIE). (2026). *WEDE5020 Web Development Module Material*. Rosebank College.
+- MDN Web Docs. (n.d.). *HTML Documentation*. https://developer.mozilla.org/en-US/docs/Web/HTML
+- MDN Web Docs. (n.d.). *CSS Documentation*. https://developer.mozilla.org/en-US/docs/Web/CSS
+- MDN Web Docs. (n.d.). *JavaScript Documentation*. https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- MDN Web Docs. (n.d.). *CSS Grid Layout*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+- MDN Web Docs. (n.d.). *Responsive Images*. https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
+- Google Fonts. (n.d.). *Google Fonts*. https://fonts.google.com/
+- GitHub. (n.d.). *GitHub Documentation*. https://docs.github.com/
+- Netlify. (n.d.). *Netlify Documentation*. https://docs.netlify.com/
+- Leaflet. (n.d.). *Leaflet Documentation*. https://leafletjs.com/
+- W3C. (n.d.). *Web Standards*. https://www.w3.org/
+
+Additional sources must be added for any external images, libraries, tutorials or services used in the final website.
+
+# 16. AI DISCLOSURE
+
+AI tools may be used as supporting resources during the development process for brainstorming, understanding programming concepts, troubleshooting code and improving project documentation.
+
+All final code and content must be reviewed, understood, adapted and tested by the student. The final submission must accurately represent the work completed and the student's understanding of the technologies used.
+
+# 17. CONCLUSION
+
+The Abby Luxe Hair website project demonstrates the process of planning, designing and developing a responsive website for a small business.
+
+Part 1 established the foundation through business research, project planning, target audience identification and website design.
+
+Part 2 focused on developing the website structure, implementing CSS styling and creating responsive layouts. The 99% assessment result demonstrated the strength of the foundation established during this stage.
+
+Part 3 builds on the existing website by introducing interactive functionality, improved customer communication, form validation, gallery enhancements, SEO improvements and final testing.
+
+The project aims to provide Abby Luxe Hair with a professional online platform where customers can explore products, learn about the business and make enquiries.
+
+---
+
+**Student:** Abongile Manzitshana  
+**Student Number:** ST10502031  
+**Module:** WEDE5020 — Web Development  
+**Institution:** Rosebank College  
+**Project:** Abby Luxe Hair  
+**Live Website:** https://6ae8eb31692388404e15eac1--abby-luxe-hair.netlify.app/home  
+**Project Status:** Part 1 and Part 2 completed; Part 3 features subject to implementation and testing.
 - Google Fonts. n.d. *Poppins*. Available at: https://fonts.google.com/specimen/Poppins
